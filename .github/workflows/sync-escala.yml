@@ -1,4 +1,5 @@
 name: Sincronizar escala (Google Docs)
+# (workflow habilitado após ativação do GitHub Actions no repositório)
 
 on:
   schedule:
