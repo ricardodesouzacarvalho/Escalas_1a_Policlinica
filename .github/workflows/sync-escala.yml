@@ -1,0 +1,39 @@
+name: Sincronizar escala (Google Docs)
+
+on:
+  schedule:
+    # A cada hora. O GitHub pode atrasar execuções agendadas em minutos de
+    # alta demanda; para atualizar na hora, use o botão "Run workflow" abaixo.
+    - cron: "7 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-escala
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Atualizar data/escalas.json e data/contatos.json a partir do Google Docs
+        env:
+          DOC_ID: "1DfpvDzd5cr31Xlbeb-xU32j6uXgPFpc2ZV7dRN1sYqM"
+        run: python3 scripts/sync_escala.py "$DOC_ID"
+
+      - name: Publicar alterações
+        run: |
+          if git diff --quiet -- data/; then
+            echo "Nenhuma mudança na escala."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/escalas.json data/contatos.json
+          git commit -m "Atualiza escala a partir do Google Docs"
+          git push

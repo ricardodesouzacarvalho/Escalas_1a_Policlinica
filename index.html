@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Escalas — 1ª Policlínica CBMERJ</title>
+<style>
+  /* =========================================================
+     DESIGN SYSTEM — 1ª Policlínica / CBMERJ
+     Paleta derivada das logomarcas da unidade:
+       vermelho bombeiro, dourado/âmbar, prata e creme.
+     ========================================================= */
+  :root{
+    --red-900:#5E0E0E; --red-800:#7A1414; --red-700:#8E1616; --red-600:#A31D1D; --red-500:#B93030;
+    --gold-600:#C9902A; --gold-500:#E4A62C; --gold-400:#F1C551;
+    --silver-100:#EEF0F3; --silver-300:#C7CBD1; --silver-500:#9AA0A8; --silver-700:#5C626B;
+    --cream:#F7F2EA; --cream-card:#FFFFFF; --ink:#241F1C; --ink-soft:#4A423E; --line:#E3DACB;
+    --wa-green:#1F8A57; --wa-green-bg:#E4F3EA;
+    --shadow-sm:0 1px 2px rgba(46,20,20,.08),0 1px 3px rgba(46,20,20,.06);
+    --shadow-md:0 6px 18px rgba(46,20,20,.10),0 2px 6px rgba(46,20,20,.06);
+    --radius:13px; --radius-sm:9px; --maxw:1600px;
+    --font:"Segoe UI",Roboto,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--font);color:var(--ink);
+    background:radial-gradient(1200px 500px at 50% -240px,rgba(142,22,22,.12),transparent 70%),var(--cream);
+    line-height:1.45;-webkit-font-smoothing:antialiased;
+  }
+
+  /* ---------- HERO / BRAND ---------- */
+  .hero{
+    background:linear-gradient(180deg,var(--red-800) 0%,var(--red-700) 55%,var(--red-900) 100%);
+    color:#fff;border-bottom:4px solid var(--gold-500);box-shadow:var(--shadow-md);
+    position:relative;overflow:hidden;
+  }
+  .hero::after{content:"";position:absolute;inset:0;
+    background:radial-gradient(700px 260px at 82% -60px,rgba(241,197,81,.16),transparent 60%);pointer-events:none;}
+  .hero-inner{max-width:var(--maxw);margin:0 auto;padding:18px 24px;display:flex;align-items:center;gap:20px;position:relative;z-index:1;}
+  .badge{flex:0 0 auto;filter:drop-shadow(0 3px 5px rgba(0,0,0,.35))}
+  .hero-text{flex:1 1 auto;min-width:0}
+  .eyebrow{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-400);font-weight:700;margin-bottom:3px}
+  .hero-text h1{font-size:clamp(1.3rem,2.4vw,1.95rem);line-height:1.12;font-weight:800;letter-spacing:.2px}
+  .hero-text h1 .thin{font-weight:400;opacity:.9}
+  .hero-sub{margin-top:6px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .pill{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);
+    padding:3px 11px;border-radius:999px;font-size:.78rem;font-weight:600}
+  .pill.gold{background:var(--gold-500);color:var(--red-900);border-color:transparent}
+  .btn-print{
+    flex:0 0 auto;background:var(--gold-500);color:var(--red-900);border:none;cursor:pointer;
+    font-family:inherit;font-weight:800;font-size:.85rem;padding:10px 16px;border-radius:var(--radius-sm);
+    display:inline-flex;align-items:center;gap:8px;box-shadow:var(--shadow-sm);transition:.15s;white-space:nowrap;
+  }
+  .btn-print:hover{background:var(--gold-400);transform:translateY(-1px)}
+
+  /* ---------- CHIP BAR (Tipo de Escala) ---------- */
+  .chipbar{background:rgba(94,14,14,.55);border-bottom:1px solid rgba(255,255,255,.12);position:relative;z-index:1}
+  .chipbar-inner{max-width:var(--maxw);margin:0 auto;padding:11px 24px;display:flex;flex-wrap:wrap;gap:8px}
+  .tchip{
+    display:inline-flex;align-items:center;gap:7px;cursor:pointer;border:1.5px solid rgba(255,255,255,.28);
+    background:rgba(255,255,255,.08);color:#fff;font-family:inherit;font-weight:700;font-size:.82rem;
+    padding:7px 13px;border-radius:999px;transition:.15s;letter-spacing:.2px;
+  }
+  .tchip .cnt{font-size:.72rem;font-weight:800;background:rgba(255,255,255,.2);border-radius:999px;padding:1px 7px;min-width:22px;text-align:center}
+  .tchip:hover{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.5)}
+  .tchip.active{background:var(--gold-500);border-color:var(--gold-400);color:var(--red-900)}
+  .tchip.active .cnt{background:rgba(94,14,14,.25);color:var(--red-900)}
+
+  /* ---------- SOURCE / ADMIN BAR ---------- */
+  .srcbar{max-width:var(--maxw);margin:0 auto;padding:10px 24px 0;display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;
+    font-size:.78rem;color:var(--ink-soft)}
+  .srcbar b{color:var(--red-700)}
+  .srcbar a{color:var(--red-700);font-weight:700;text-decoration:none;border-bottom:1.5px dotted var(--red-600)}
+  .srcbar a:hover{color:var(--red-800)}
+
+  /* ---------- TOOLBAR ---------- */
+  .toolbar{max-width:var(--maxw);margin:0 auto;padding:16px 24px 4px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+  .search{flex:1 1 280px;min-width:220px;position:relative}
+  .search input{width:100%;padding:10px 14px 10px 40px;border-radius:var(--radius-sm);border:1.5px solid var(--line);
+    background:#fff;font-size:.94rem;color:var(--ink);box-shadow:var(--shadow-sm);transition:.15s}
+  .search input:focus{outline:none;border-color:var(--red-600);box-shadow:0 0 0 3px rgba(163,29,29,.14)}
+  .search svg{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--silver-500)}
+  .field{display:flex;align-items:center;gap:8px}
+  .field label{font-size:.78rem;font-weight:700;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.06em}
+  .field select{
+    font-family:inherit;font-size:.9rem;font-weight:600;color:var(--ink);background:#fff;
+    border:1.5px solid var(--line);border-radius:var(--radius-sm);padding:9px 32px 9px 12px;box-shadow:var(--shadow-sm);
+    cursor:pointer;appearance:none;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238E1616' stroke-width='3'><path d='M6 9l6 6 6-6'/></svg>");
+    background-repeat:no-repeat;background-position:right 11px center;
+  }
+  .field select:focus{outline:none;border-color:var(--red-600);box-shadow:0 0 0 3px rgba(163,29,29,.14)}
+  .seg{display:inline-flex;background:#fff;border:1.5px solid var(--line);border-radius:var(--radius-sm);padding:3px;box-shadow:var(--shadow-sm)}
+  .seg button{border:none;background:transparent;cursor:pointer;font-family:inherit;font-size:.83rem;font-weight:600;color:var(--ink-soft);
+    padding:7px 13px;border-radius:6px;transition:.15s;white-space:nowrap}
+  .seg button.active{background:var(--red-700);color:#fff;box-shadow:var(--shadow-sm)}
+  .seg.hidden{display:none}
+
+  /* ---------- STATS ---------- */
+  .stats{max-width:var(--maxw);margin:14px auto 0;padding:0 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:11px}
+  .stat{background:var(--cream-card);border:1px solid var(--line);border-radius:var(--radius-sm);padding:11px 15px;box-shadow:var(--shadow-sm);position:relative;overflow:hidden}
+  .stat::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--gold-500)}
+  .stat .num{font-size:1.4rem;font-weight:800;color:var(--red-700);line-height:1}
+  .stat .lbl{font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;color:var(--silver-700);font-weight:600;margin-top:4px}
+
+  /* ---------- LEGEND ---------- */
+  .legend{max-width:var(--maxw);margin:11px auto 0;padding:0 24px;display:flex;flex-wrap:wrap;gap:14px;font-size:.8rem;color:var(--ink-soft);align-items:center}
+  .legend .item{display:inline-flex;align-items:center;gap:6px}
+  .chip{display:inline-flex;align-items:center;justify-content:center;width:24px;height:19px;border-radius:5px;font-size:.68rem;font-weight:800}
+  .chip.m{background:#FBE7C9;color:#8A6410;border:1px solid #EBCE8E}
+  .chip.t{background:#E7D8F0;color:#5A2E77;border:1px solid #D2BBE0}
+  .dot{width:11px;height:11px;border-radius:50%;display:inline-block}
+  .dot.a{background:var(--red-600)} .dot.b{background:var(--silver-500)}
+
+  /* ---------- CONTENT ---------- */
+  main{max-width:var(--maxw);margin:0 auto;padding:18px 24px 60px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+
+  .card{background:var(--cream-card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);overflow:hidden;
+    display:flex;flex-direction:column;transition:box-shadow .18s,transform .18s}
+  .card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
+  .card-head{background:linear-gradient(180deg,var(--red-700),var(--red-800));color:#fff;padding:9px 14px;
+    display:flex;align-items:center;justify-content:space-between;gap:10px;border-bottom:3px solid var(--gold-500)}
+  .card-head .date{font-weight:800;font-size:1rem;letter-spacing:.3px}
+  .card-head .wd{font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;opacity:.9;font-weight:600}
+  .card-head .count{background:var(--gold-500);color:var(--red-900);font-weight:800;font-size:.74rem;border-radius:999px;padding:2px 9px;flex:0 0 auto}
+
+  .feriado-box{padding:16px 14px;text-align:center;color:var(--gold-600);font-weight:800;font-size:.86rem;letter-spacing:.02em}
+
+  .roster{list-style:none;padding:4px 0;margin:0}
+  .roster li{display:flex;align-items:center;gap:9px;padding:6px 14px;border-bottom:1px solid var(--line)}
+  .roster li:last-child{border-bottom:none}
+  .roster li.hit{background:#FFF7E2}
+  .rank{flex:0 0 auto;font-size:.6rem;font-weight:800;letter-spacing:.03em;padding:2px 6px;border-radius:5px;text-transform:uppercase;min-width:52px;text-align:center}
+  .r-cel{background:#F0D8B0;color:#7A5410} .r-tc{background:#F3D9D9;color:var(--red-800)}
+  .r-maj{background:#E7DFCF;color:#8A6410} .r-cap{background:#DCE7DF;color:#2C6B45}
+  .r-ten{background:#D9E2EF;color:#2B4A78} .r-sub{background:#E3DEF0;color:#4A3A78} .r-sgt{background:#E4E4E7;color:var(--silver-700)}
+  .name{flex:1 1 auto;font-weight:600;font-size:.86rem;color:var(--ink);min-width:0}
+  .time-tag{flex:0 0 auto;font-size:.62rem;font-weight:800;color:var(--red-700);background:#F6E4E4;border:1px solid #EBC9C9;border-radius:4px;padding:1px 5px;margin-right:2px}
+  .shifts{flex:0 0 auto;display:flex;gap:4px}
+  .sh{width:24px;height:20px;border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:.68rem;font-weight:800}
+  .sh.on-m{background:#FBE7C9;color:#8A6410;border:1px solid #EBCE8E}
+  .sh.on-t{background:#E7D8F0;color:#5A2E77;border:1px solid #D2BBE0}
+  .sh.off{background:#F4F4F5;color:#C7C7CC;border:1px solid #ECECEC}
+
+  .wa-btn{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;
+    background:var(--wa-green-bg);color:var(--wa-green);transition:.15s;text-decoration:none}
+  .wa-btn:hover{background:var(--wa-green);color:#fff;transform:scale(1.08)}
+  .wa-btn svg{width:13px;height:13px}
+
+  /* pair layout (Permanência / Oficial de Dia) */
+  .pair-sec{padding:7px 14px;border-bottom:1px solid var(--line)}
+  .pair-sec:last-child{border-bottom:none}
+  .pair-lbl{font-size:.64rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px;display:flex;align-items:center;gap:6px}
+  .pair-lbl.a{color:var(--red-700)} .pair-lbl.b{color:var(--silver-700)}
+  .pair-row{display:flex;align-items:center;gap:8px;padding:2px 0}
+
+  /* professional view */
+  .prof{background:var(--cream-card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:12px 15px}
+  .prof-head{display:flex;align-items:center;gap:9px;margin-bottom:9px}
+  .prof-head .name{font-size:.94rem;font-weight:800;color:var(--red-800);flex:0 1 auto}
+  .prof-head .badge-count{margin-left:auto;font-size:.72rem;font-weight:700;color:var(--silver-700);background:var(--silver-100);border-radius:999px;padding:2px 9px}
+  .prof-days{display:flex;flex-wrap:wrap;gap:5px}
+  .dtag{display:inline-flex;align-items:center;gap:4px;font-size:.74rem;font-weight:700;background:var(--cream);border:1px solid var(--line);border-radius:7px;padding:3px 7px;color:var(--ink-soft)}
+  .dtag .dd{color:var(--red-700);font-weight:800}
+  .mini{font-size:.6rem;font-weight:800;padding:1px 4px;border-radius:3px}
+  .mini.m{background:#FBE7C9;color:#8A6410} .mini.t{background:#E7D8F0;color:#5A2E77}
+  .mini.a{background:#F6E1E1;color:var(--red-700)} .mini.b{background:#E7E9ED;color:var(--silver-700)}
+
+  /* GERAL dashboard */
+  .dash{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+  .dcard{background:var(--cream-card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);
+    padding:16px 17px;cursor:pointer;transition:.18s;border-left:5px solid var(--gold-500);text-align:left}
+  .dcard:hover{box-shadow:var(--shadow-md);transform:translateY(-2px);border-left-color:var(--red-600)}
+  .dcard h3{font-size:1.02rem;color:var(--red-800);font-weight:800;margin-bottom:2px}
+  .dcard .sub{font-size:.74rem;color:var(--silver-700);font-weight:600;margin-bottom:12px}
+  .dcard .metrics{display:flex;gap:18px}
+  .dcard .metric .n{font-size:1.5rem;font-weight:800;color:var(--red-700);line-height:1}
+  .dcard .metric .l{font-size:.66rem;text-transform:uppercase;letter-spacing:.06em;color:var(--silver-700);font-weight:600;margin-top:3px}
+  .dcard .hitline{margin-top:11px;font-size:.78rem;font-weight:700;color:var(--gold-600)}
+  .dcard .go{margin-top:12px;font-size:.78rem;font-weight:800;color:var(--red-600);display:inline-flex;align-items:center;gap:5px}
+
+  .empty{text-align:center;padding:56px 20px;color:var(--silver-700);grid-column:1/-1}
+  .empty svg{opacity:.4;margin-bottom:10px}
+
+  footer{border-top:1px solid var(--line);margin-top:30px;text-align:center;padding:22px;color:var(--silver-700);font-size:.78rem}
+  footer strong{color:var(--red-700)}
+  footer a{color:var(--red-700);font-weight:700;text-decoration:none}
+
+  @media print{
+    body{background:#fff}
+    .toolbar,.chipbar,.btn-print,.srcbar,.legend .hint,.wa-btn{display:none!important}
+    .hero{box-shadow:none;border-bottom:3px solid var(--gold-600)}
+    .card,.prof,.dcard{break-inside:avoid;box-shadow:none;border-color:#ccc}
+    .card:hover,.dcard:hover{transform:none}
+    .grid,.dash{gap:8px}
+    @page{margin:11mm}
+  }
+  @media (max-width:520px){.hero-inner{gap:12px;padding:14px}.badge svg{width:60px;height:60px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <!-- Crest: Star of Life (Policlínica) -->
+    <div class="badge" aria-hidden="true">
+      <svg width="74" height="74" viewBox="0 0 100 100" role="img">
+        <circle cx="50" cy="50" r="48" fill="#7A1414" stroke="#F1C551" stroke-width="3"/>
+        <circle cx="50" cy="50" r="40" fill="none" stroke="#fff" stroke-width="1.4" opacity=".8"/>
+        <g transform="translate(50,50)" fill="#B93030" stroke="#EEF0F3" stroke-width="2" stroke-linejoin="round">
+          <g id="bar"><rect x="-7" y="-34" width="14" height="68" rx="3"/></g>
+          <use href="#bar" transform="rotate(60)"/><use href="#bar" transform="rotate(120)"/>
+        </g>
+        <rect x="48.3" y="26" width="3.4" height="48" rx="1.6" fill="#C7CBD1" stroke="#5C626B" stroke-width=".6"/>
+        <circle cx="50" cy="27" r="3.2" fill="#C7CBD1" stroke="#5C626B" stroke-width=".6"/>
+        <path d="M50 38 q9 5 0 11 q-9 5 0 11 q9 5 0 10" fill="none" stroke="#E4A62C" stroke-width="3.4" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="hero-text">
+      <div class="eyebrow">Corpo de Bombeiros Militar do Estado do Rio de Janeiro</div>
+      <h1>1ª Policlínica <span class="thin">— Campinho</span></h1>
+      <div class="hero-sub" id="hero-pills">
+        <span class="pill gold">Escalas de Serviço</span>
+        <span class="pill" id="pill-competencia">Carregando…</span>
+        <span class="pill">Divulgação pública</span>
+      </div>
+    </div>
+    <button class="btn-print" onclick="window.print()" title="Imprimir a tela atual">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+      Imprimir tela
+    </button>
+  </div>
+
+  <div class="chipbar"><div class="chipbar-inner" id="chipbar"></div></div>
+</header>
+
+<div class="srcbar" id="srcbar"></div>
+
+<div class="toolbar">
+  <label class="search">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    <input id="q" type="search" placeholder="Buscar por profissional, patente ou data…" autocomplete="off">
+  </label>
+  <div class="field">
+    <label for="sel-tipo">Tipo de Escala</label>
+    <select id="sel-tipo"></select>
+  </div>
+  <div class="seg" id="seg-view" role="tablist" aria-label="Modo de visualização">
+    <button id="view-day" class="active" role="tab">Por Data</button>
+    <button id="view-prof" role="tab">Por Profissional</button>
+  </div>
+</div>
+
+<section class="stats" id="stats" aria-label="Resumo"></section>
+<div class="legend" id="legend"></div>
+
+<main><div id="content"><div class="empty">Carregando escalas…</div></div></main>
+
+<footer id="footer">
+  <strong>1ª Policlínica — CBMERJ</strong> · Documento de divulgação pública ·
+  Confira sempre a versão oficial publicada.
+</footer>
+
+<script>
+/* ============================================================
+   Site estático: os dados NÃO estão fixos no código. Eles vêm de
+   data/escalas.json (gerado a partir do Google Docs mantido pela
+   administração) e data/contatos.json (telefones para WhatsApp).
+   Layouts suportados: 'shift' (M/T) · 'team' (equipe) · 'pair' (2 colunas)
+   ============================================================ */
+const M=1,T=2;
+
+let SCHEDULES=[];
+let byId={};
+let CONTACTS=[];
+let META={};
+
+/* ---------- HELPERS ---------- */
+const norm=s=>(s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
+
+const RANKS=[
+  [/^TEN\s+CEL\b/i,"TEN CEL","r-tc"],
+  [/^SUBTEN\b/i,"SUBTEN","r-sub"],
+  [/^[1-3][°º]\s*TEN\b/i,null,"r-ten"],
+  [/^[1-3][°º]\s*SGT\b/i,null,"r-sgt"],
+  [/^CEL\b/i,"CEL","r-cel"],
+  [/^MAJ\b/i,"MAJ","r-maj"],
+  [/^CAP\b/i,"CAP","r-cap"],
+  [/^SGT\b/i,"SGT","r-sgt"],
+  [/^TEN\b/i,"TEN","r-ten"],
+];
+function rank(nameRaw){
+  const n=(nameRaw||"").replace(/\s+/g," ").trim();
+  for(const [re,label,cls] of RANKS){
+    const m=n.match(re);
+    if(m) return {label:(label||m[0].trim()).toUpperCase(),cls,rest:n.slice(m[0].length).trim(),full:n};
+  }
+  return {label:"",cls:"r-sgt",rest:n,full:n};
+}
+
+let CONTACT_BY_KEY={};
+function contactFor(restName){
+  return CONTACT_BY_KEY[norm(restName)];
+}
+function waHref(phoneRaw,personName){
+  const digits=(phoneRaw||"").replace(/\D/g,"");
+  if(!digits)return null;
+  const text=encodeURIComponent(`Olá, ${personName} — sobre a escala de serviço da 1ª Policlínica.`);
+  return `https://wa.me/${digits}?text=${text}`;
+}
+const WA_ICON=`<svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.2-.6.9-.8 1.1-.1.2-.3.2-.5.1-1.5-.7-2.5-1.3-3.5-2.9-.3-.4 0-.4.3-.8.2-.2.3-.4.1-.6-.1-.2-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9 1-.9 2.3 0 1.4 1 2.7 1.2 2.9.2.2 1.9 3 4.7 4.1 2.3 1 2.3.6 2.7.5.4-.1 1.6-.6 1.8-1.3.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.3zm-5.5 6.5h0c-1.6 0-3.1-.4-4.5-1.2l-.3-.2-3.3.9.9-3.2-.2-.3C3.9 15.4 3.5 13.7 3.5 12c0-4.7 3.8-8.5 8.5-8.5 2.3 0 4.4.9 6 2.5 1.6 1.6 2.5 3.7 2.5 6 0 4.7-3.8 8.5-8.5 8.5zm7.1-15.6C17.4 3.6 14.8 2.5 12 2.5 6.8 2.5 2.5 6.8 2.5 12c0 1.7.4 3.4 1.3 4.8L2.5 21.5l4.8-1.3c1.4.8 3 1.2 4.7 1.2h0c5.2 0 9.5-4.3 9.5-9.5 0-2.5-1-4.9-2.9-6.6z"/></svg>`;
+function waButton(phoneRaw,personName){
+  const href=waHref(phoneRaw,personName);
+  if(!href)return "";
+  return `<a class="wa-btn" href="${href}" target="_blank" rel="noopener" title="Chamar ${personName} no WhatsApp" onclick="event.stopPropagation()">${WA_ICON}</a>`;
+}
+function rankHTML(nameRaw){
+  const r=rank(nameRaw);
+  const c=contactFor(r.rest);
+  const wa=c?waButton(c.whatsapp,r.full):"";
+  return `<span class="rank ${r.cls}">${r.label||"—"}</span><span class="name">${r.rest}</span>${wa}`;
+}
+const dd=d=>d.slice(0,5);
+
+function dayNames(sc,day){
+  if(sc.layout==="shift")return day.r.map(x=>x[0]);
+  if(sc.layout==="team")return day.t;
+  return [...day.a.map(x=>x.n),...day.b.map(x=>x.n)];
+}
+function dayBlob(sc,day){return norm(day.d+" "+day.wd+" "+dayNames(sc,day).join(" "));}
+
+/* ---------- STATE ---------- */
+const state={sched:"geral",view:"day",q:""};
+
+/* ---------- CHIPS + SELECT ---------- */
+function distinctCalendarDays(){
+  const set=new Set();SCHEDULES.forEach(s=>s.days.forEach(d=>set.add(d.d)));return set.size;
+}
+function buildChrome(){
+  const chips=[["geral","GERAL",distinctCalendarDays()],
+    ...SCHEDULES.map(s=>[s.id,s.label.toUpperCase(),s.days.length])];
+  document.getElementById("chipbar").innerHTML=chips.map(([id,lbl,c])=>
+    `<button class="tchip" data-sched="${id}"><span>${lbl}</span><span class="cnt">${c}</span></button>`).join("");
+  document.getElementById("sel-tipo").innerHTML=chips.map(([id,lbl,c])=>
+    `<option value="${id}">${id==="geral"?"Geral — todas":(byId[id].short||byId[id].label)} (${c})</option>`).join("");
+  document.querySelectorAll(".tchip").forEach(b=>b.onclick=()=>setSched(b.dataset.sched));
+  document.getElementById("sel-tipo").onchange=e=>setSched(e.target.value);
+}
+
+function syncChrome(){
+  document.querySelectorAll(".tchip").forEach(b=>b.classList.toggle("active",b.dataset.sched===state.sched));
+  document.getElementById("sel-tipo").value=state.sched;
+  document.getElementById("seg-view").classList.toggle("hidden",state.sched==="geral");
+}
+
+/* ---------- STATS + LEGEND ---------- */
+function renderStatsLegend(){
+  const stats=document.getElementById("stats"), legend=document.getElementById("legend");
+  const competencia=META.competencia||"—";
+  if(state.sched==="geral"){
+    let entries=0;
+    SCHEDULES.forEach(s=>s.days.forEach(d=>entries+=dayNames(s,d).length));
+    stats.innerHTML=statCards([[SCHEDULES.length,"Escalas"],[distinctCalendarDays(),"Dias no mês"],[entries,"Designações"],[competencia,"Competência"]]);
+    legend.innerHTML=`<span class="item hint">Selecione um tipo de escala nos chips acima ou clique em um cartão. Use a busca para localizar um profissional em todas as escalas.</span>`;
+    return;
+  }
+  const sc=byId[state.sched];
+  const profs=new Set();let entries=0;
+  sc.days.forEach(d=>dayNames(sc,d).forEach(n=>{profs.add(norm(rank(n).rest));entries++;}));
+  stats.innerHTML=statCards([[sc.days.length,"Dias de escala"],[profs.size,"Profissionais"],[entries,sc.unit],[competencia,"Competência"]]);
+
+  if(sc.layout==="shift")
+    legend.innerHTML=`<span class="item"><span class="chip m">M</span> Manhã</span><span class="item"><span class="chip t">T</span> Tarde</span><span class="item hint" style="color:var(--silver-500)">Botão “Imprimir tela” ou Ctrl/Cmd + P</span>`;
+  else if(sc.layout==="pair")
+    legend.innerHTML=`<span class="item"><span class="dot a"></span> ${sc.cols[0]}</span><span class="item"><span class="dot b"></span> ${sc.cols[1]}</span><span class="item hint" style="color:var(--silver-500)">Botão “Imprimir tela” ou Ctrl/Cmd + P</span>`;
+  else
+    legend.innerHTML=`<span class="item"><span class="dot a"></span> Equipe do dia</span><span class="item hint" style="color:var(--silver-500)">Botão “Imprimir tela” ou Ctrl/Cmd + P</span>`;
+}
+const statCards=arr=>arr.map(([n,l])=>`<div class="stat"><div class="num">${n}</div><div class="lbl">${l}</div></div>`).join("");
+
+/* ---------- RENDER: content ---------- */
+function render(){
+  syncChrome();renderStatsLegend();
+  const el=document.getElementById("content");
+  const q=norm(state.q.trim());
+  if(state.sched==="geral"){el.innerHTML=renderDash(q);bindDash();return;}
+  const sc=byId[state.sched];
+  el.innerHTML=state.view==="day"?renderDays(sc,q):renderProf(sc,q);
+}
+
+/* GERAL dashboard */
+function renderDash(q){
+  const cards=SCHEDULES.map(sc=>{
+    let hits=0;
+    if(q)sc.days.forEach(d=>{if(dayBlob(sc,d).includes(q))hits++;});
+    if(q&&hits===0)return "";
+    const profs=new Set();sc.days.forEach(d=>dayNames(sc,d).forEach(n=>profs.add(norm(rank(n).rest))));
+    return `<button class="dcard" data-sched="${sc.id}">
+      <h3>${sc.label}</h3><div class="sub">${sc.short||nameForLayout(sc)}</div>
+      <div class="metrics">
+        <div class="metric"><div class="n">${sc.days.length}</div><div class="l">Dias</div></div>
+        <div class="metric"><div class="n">${profs.size}</div><div class="l">Profissionais</div></div>
+      </div>
+      ${q?`<div class="hitline">${hits} dia(s) com “${state.q.trim()}”</div>`:""}
+      <div class="go">Abrir escala ▸</div>
+    </button>`;
+  }).join("");
+  return `<div class="dash">${cards||emptyBlock()}</div>`;
+}
+function nameForLayout(sc){return sc.layout==="pair"?sc.cols.join(" · "):sc.layout==="shift"?"Manhã / Tarde":"Equipe diária";}
+function bindDash(){document.querySelectorAll(".dcard").forEach(b=>b.onclick=()=>setSched(b.dataset.sched));}
+
+/* DAY view per layout */
+function renderDays(sc,q){
+  const cards=sc.days.map(day=>{
+    const match=!q||dayBlob(sc,day).includes(q);
+    if(!match)return "";
+    if(day.feriado){
+      return `<article class="card">
+        <div class="card-head"><div><div class="date">${dd(day.d)}</div><div class="wd">${day.wd}</div></div></div>
+        <div class="feriado-box">★ ${day.feriado}</div></article>`;
+    }
+    let body,count;
+    if(sc.layout==="shift"){
+      count=day.r.length;
+      body=`<ul class="roster">`+day.r.map(([n,s])=>`<li class="${q&&norm(rank(n).rest).includes(q)?'hit':''}">${rankHTML(n)}
+        <span class="shifts"><span class="sh ${s&M?'on-m':'off'}">M</span><span class="sh ${s&T?'on-t':'off'}">T</span></span></li>`).join("")+`</ul>`;
+    }else if(sc.layout==="team"){
+      count=day.t.length;
+      body=`<ul class="roster">`+day.t.map(n=>`<li class="${q&&norm(rank(n).rest).includes(q)?'hit':''}">${rankHTML(n)}</li>`).join("")+`</ul>`;
+    }else{
+      count=day.a.length+day.b.length;
+      body=pairSec(sc.cols[0],"a",day.a,q)+pairSec(sc.cols[1],"b",day.b,q);
+    }
+    return `<article class="card">
+      <div class="card-head"><div><div class="date">${dd(day.d)}</div><div class="wd">${day.wd}</div></div><span class="count">${count}</span></div>
+      ${body}</article>`;
+  }).join("");
+  return `<div class="grid">${cards||emptyBlock()}</div>`;
+}
+function pairSec(label,cls,arr,q){
+  return `<div class="pair-sec"><div class="pair-lbl ${cls}"><span class="dot ${cls}"></span>${label}</div>`+
+    arr.map(e=>`<div class="pair-row ${q&&norm(rank(e.n).rest).includes(q)?'hit':''}">${e.t?`<span class="time-tag">${e.t}</span>`:""}${rankHTML(e.n)}</div>`).join("")+`</div>`;
+}
+
+/* PROFESSIONAL view per layout */
+function renderProf(sc,q){
+  const map=new Map();
+  const push=(n,dstr,meta)=>{const k=rank(n).rest;if(!map.has(k))map.set(k,{full:n,items:[]});map.get(k).items.push({dd:dd(dstr),meta});};
+  sc.days.forEach(day=>{
+    if(day.feriado)return;
+    if(sc.layout==="shift")day.r.forEach(([n,s])=>push(n,day.d,{type:"shift",s}));
+    else if(sc.layout==="team")day.t.forEach(n=>push(n,day.d,null));
+    else{day.a.forEach(e=>push(e.n,day.d,{type:"role",cls:"a"}));day.b.forEach(e=>push(e.n,day.d,{type:"role",cls:"b"}));}
+  });
+  const names=[...map.keys()].sort((a,b)=>a.localeCompare(b,"pt")).filter(k=>!q||norm(k).includes(q));
+  const cards=names.map(k=>{
+    const {full,items}=map.get(k);
+    const c=contactFor(k);
+    const wa=c?waButton(c.whatsapp,full):"";
+    const tags=items.map(it=>{
+      let badge="";
+      if(it.meta&&it.meta.type==="shift")badge=(it.meta.s&M?'<span class="mini m">M</span>':'')+(it.meta.s&T?'<span class="mini t">T</span>':'');
+      else if(it.meta&&it.meta.type==="role")badge=`<span class="mini ${it.meta.cls}">${it.meta.cls==="a"?sc.cols[0].slice(0,4):sc.cols[1].slice(0,4)}</span>`;
+      return `<span class="dtag"><span class="dd">${it.dd}</span>${badge}</span>`;
+    }).join("");
+    return `<div class="prof"><div class="prof-head"><span class="rank ${rank(full).cls}">${rank(full).label||"—"}</span>
+      <span class="name">${k}</span>${wa}<span class="badge-count">${items.length} dia${items.length>1?'s':''}</span></div>
+      <div class="prof-days">${tags}</div></div>`;
+  }).join("");
+  return `<div class="grid">${cards||emptyBlock()}</div>`;
+}
+
+function emptyBlock(){return `<div class="empty"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><div>Nenhum resultado encontrado.</div></div>`;}
+function errorBlock(msg){return `<div class="empty"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg><div>${msg}</div></div>`;}
+
+/* ---------- ACTIONS ---------- */
+function setSched(id){state.sched=id;render();window.scrollTo({top:0,behavior:"smooth"});}
+function setView(v){state.view=v;document.getElementById("view-day").classList.toggle("active",v==="day");document.getElementById("view-prof").classList.toggle("active",v==="prof");render();}
+
+/* ---------- FONTE / RODAPÉ ---------- */
+function renderSrcBar(){
+  const el=document.getElementById("srcbar");
+  const partes=[];
+  if(META.atualizadoEm){
+    const dt=new Date(META.atualizadoEm);
+    partes.push(`<span>Atualizado em <b>${dt.toLocaleString("pt-BR",{dateStyle:"short",timeStyle:"short"})}</b></span>`);
+  }
+  if(META.linkEdicao){
+    partes.push(`<a href="${META.linkEdicao}" target="_blank" rel="noopener">Editar escala do mês no Google Docs ↗</a>`);
+  }
+  el.innerHTML=partes.join(" · ");
+  if(META.competencia){
+    document.getElementById("pill-competencia").textContent=META.competencia;
+    document.title=`Escalas — 1ª Policlínica CBMERJ — ${META.competencia}`;
+  }
+}
+
+/* ---------- INIT ---------- */
+async function init(){
+  try{
+    const [escalasRes,contatosRes]=await Promise.all([
+      fetch("data/escalas.json",{cache:"no-store"}),
+      fetch("data/contatos.json",{cache:"no-store"}).catch(()=>null),
+    ]);
+    if(!escalasRes.ok)throw new Error("HTTP "+escalasRes.status);
+    const data=await escalasRes.json();
+    META={competencia:data.competencia,atualizadoEm:data.atualizadoEm,linkEdicao:data.linkEdicao,docId:data.docId};
+    SCHEDULES=data.escalas;
+    byId=Object.fromEntries(SCHEDULES.map(s=>[s.id,s]));
+
+    if(contatosRes&&contatosRes.ok){
+      CONTACTS=await contatosRes.json();
+      CONTACT_BY_KEY=Object.fromEntries(CONTACTS.filter(c=>c.whatsapp).map(c=>[norm(c.nome),c]));
+    }
+
+    renderSrcBar();
+    buildChrome();
+    render();
+  }catch(err){
+    document.getElementById("content").innerHTML=errorBlock("Não foi possível carregar as escalas agora. Tente novamente em alguns minutos.");
+    console.error(err);
+  }
+}
+
+document.getElementById("q").addEventListener("input",e=>{state.q=e.target.value;render();});
+document.getElementById("view-day").addEventListener("click",()=>setView("day"));
+document.getElementById("view-prof").addEventListener("click",()=>setView("prof"));
+init();
+</script>
+</body>
+</html>

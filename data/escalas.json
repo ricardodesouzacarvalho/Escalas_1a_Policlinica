@@ -1,0 +1,2692 @@
+{
+  "competencia": "Novembro/2026",
+  "atualizadoEm": "2026-11-11T20:09:17Z",
+  "docId": "1DfpvDzd5cr31Xlbeb-xU32j6uXgPFpc2ZV7dRN1sYqM",
+  "linkEdicao": "https://docs.google.com/document/d/1DfpvDzd5cr31Xlbeb-xU32j6uXgPFpc2ZV7dRN1sYqM/edit",
+  "escalas": [
+    {
+      "id": "assistencial",
+      "label": "Assistencial",
+      "layout": "shift",
+      "cols_total": 4,
+      "unit": "turnos",
+      "days": [
+        {
+          "d": "02/11/2026",
+          "wd": "segunda-feira",
+          "r": [
+            [
+              "TEN CEL CRISTIANA DE CARVALHO GRILLO",
+              3
+            ],
+            [
+              "TEN CEL ALEXANDRE MAGNO XAVIER SANTANA",
+              1
+            ],
+            [
+              "TEN CEL ELAINE ELIAS LADISLAU CHEREM",
+              3
+            ],
+            [
+              "TEN CEL LUCIANA MOTA AUGUSTO RANAURO",
+              3
+            ],
+            [
+              "MAJ FERNANDO CORREIA CRUZ",
+              2
+            ],
+            [
+              "CAP REDUVAL LINDOSO CAVALCANTI JÚNIOR",
+              3
+            ],
+            [
+              "CAP RENATA DE OLIVEIRA MILAGRES TRISTÃO DA CUNHA",
+              3
+            ],
+            [
+              "1° TEN ISABELLA CAROLINE RODRIGUES MACHADO",
+              3
+            ],
+            [
+              "1° SGT ANA CLÁUDIA PONTES MONTEIRO SOARES",
+              3
+            ]
+          ]
+        },
+        {
+          "d": "03/11/2026",
+          "wd": "terça-feira",
+          "r": [
+            [
+              "TEN CEL ALEXANDRE MAGNO XAVIER SANTANA",
+              3
+            ],
+            [
+              "TEN CEL ALESSANDRA FRANCO RIBEIRO",
+              3
+            ],
+            [
+              "TEN CEL MÔNICA DOS SANTOS MASCARENHAS",
+              3
+            ],
+            [
+              "TEN CEL ALINE RODRIGUES CÂNDIDO MENDES ROSA",
+              3
+            ],
+            [
+              "MAJ JANE CLARICE DE FARIA RAMOS",
+              3
+            ],
+            [
+              "MAJ FERNANDO CORREIA CRUZ",
+              1
+            ],
+            [
+              "MAJ THEO HENRIQUE PINHO MARQUES LEITE",
+              3
+            ],
+            [
+              "MAJ LUCIANA ALEXANDRINA JUCÁ",
+              3
+            ],
+            [
+              "CAP REDUVAL LINDOSO CAVALCANTI JÚNIOR",
+              3
+            ],
+            [
+              "CAP FERNANDA PEREIRA BARBOZA",
+              1
+            ],
+            [
+              "CAP CARLA SILVA GAMA",
+              3
+            ],
+            [
+              "1° TEN LUCCAS AUGUSTO FERREIRA RODRIGUES",
+              3
+            ],
+            [
+              "1° TEN ISABELLA CAROLINE RODRIGUES MACHADO",
+              3
+            ]
+          ]
+        },
+        {
+          "d": "04/11/2026",
+          "wd": "quarta-feira",
+          "r": [
+            [
+              "TEN CEL LUCIANA FERREIRA CAVALCANTE",
+              3
+            ],
+            [
+              "TEN CEL LEANDRO PATARO CALVÃO",
+              3
+            ],
+            [
+              "TEN CEL RENATA MALVEZZI MALDONADO",
+              3
+            ],
+            [
+              "TEN CEL ANA MARIA PIA GRILLO SBROCCA",
+              3
+            ],
+            [
+              "TEN CEL ALINE RODRIGUES CÂNDIDO MENDES ROSA",
+              3
+            ],
+            [
+              "TEN CEL BÁRBARA SILVA DO VALE",
+              3
+            ],
+            [
+              "TEN CEL LUCIANA MOTA AUGUSTO RANAURO",
+              3
+            ],
+            [
+              "MAJ RENATA MADDALENA MONTEIRO CONTREIRAS",
+              1
+            ],
+            [
+              "MAJ LUCIANA ALEXANDRINA JUCÁ",
+              3
+            ],
+            [
+              "CAP FERNANDA PEREIRA BARBOZA",
+              2
+            ],
+            [
+              "CAP RENATA DE OLIVEIRA MILAGRES TRISTÃO DA CUNHA",
+              3
+            ],
+            [
+              "1° TEN KALIL LUCAS FERREIRA MARIANO",
+              3
+            ],
+            [
+              "1° SGT ANA CLÁUDIA PONTES MONTEIRO SOARES",
+              3
+            ]
+          ]
+        },
+        {
+          "d": "05/11/2026",
+          "wd": "quinta-feira",
+          "r": [
+            [
+              "TEN CEL RENATA MALVEZZI MALDONADO",
+              3
+            ],
+            [
+              "TEN CEL MÔNICA DOS SANTOS MASCARENHAS",
+              3
+            ],
+            [
+              "TEN CEL ELAINE ELIAS LADISLAU CHEREM",
+              3
+            ],
+            [
+              "TEN CEL BÁRBARA SILVA DO VALE",
+              3
+            ],
+            [
+              "MAJ RENATA MADDALENA MONTEIRO CONTREIRAS",
+              1
+            ],
+            [
+              "CAP FERNANDA PEREIRA BARBOZA",
+              3
+            ],
+            [
+              "CAP CARLA SILVA GAMA",
+              3
+            ],
+            [
+              "CAP TÚLIO MEDINA GUERRA PEREIRA CALDAS",
+              3
+            ],
+            [
+              "1° TEN LUCCAS AUGUSTO FERREIRA RODRIGUES",
+              3
+            ]
+          ]
+        },
+        {
+          "d": "06/11/2026",
+          "wd": "sexta-feira",
+          "r": [
+            [
+              "TEN CEL LUCIANA FERREIRA CAVALCANTE",
+              3
+            ],
+            [
+              "TEN CEL ALEXANDRE MAGNO XAVIER SANTANA",
+              1
+            ],
+            [
+              "TEN CEL ANA MARIA PIA GRILLO SBROCCA",
+              3
+            ],
+            [
+              "MAJ JANE CLARICE DE FARIA RAMOS",
+              3
+            ],
+            [
+              "MAJ FERNANDO CORREIA CRUZ",
+              3
+            ],
+            [
+              "MAJ THEO HENRIQUE PINHO MARQUES LEITE",
+              3
+            ],
+            [
+              "1° SGT ANA CLÁUDIA PONTES MONTEIRO SOARES",
+              2
+            ]
+          ]
+        },
+        {
+          "d": "09/11/2026",
+          "wd": "segunda-feira",
+          "r": [
+            [
+              "TEN CEL CRISTIANA DE CARVALHO GRILLO",
+              3
+            ],
+            [
+              "TEN CEL ALEXANDRE MAGNO XAVIER SANTANA",
+              1
+            ],
+            [
+              "TEN CEL ELAINE ELIAS LADISLAU CHEREM",
+              3
+            ],
+            [
+              "TEN CEL LUCIANA MOTA AUGUSTO RANAURO",
+              3
+            ],
+            [
+              "MAJ FERNANDO CORREIA CRUZ",
+              2
+            ],
+            [
+              "CAP REDUVAL LINDOSO CAVALCANTI JÚNIOR",
+              3
+            ],
+            [
+              "CAP RENATA DE OLIVEIRA MILAGRES TRISTÃO DA CUNHA",
+              3
+            ],
+            [
+              "1° TEN ISABELLA CAROLINE RODRIGUES MACHADO",
+              3
+            ],
+            [
+              "1° SGT ANA CLÁUDIA PONTES MONTEIRO SOARES",
+              3
+            ]
+          ]
+        },
+        {
+          "d": "10/11/2026",
+          "wd": "terça-feira",
+          "r": [
+            [
+              "TEN CEL ALEXANDRE MAGNO XAVIER SANTANA",
+              3
+            ],
+            [
+              "TEN CEL ALESSANDRA FRANCO RIBEIRO",
+              3
+            ],
+            [
+              "TEN CEL MÔNICA DOS SANTOS MASCARENHAS",
+              3
+            ],
+            [
+              "TEN CEL ALINE RODRIGUES CÂNDIDO MENDES ROSA",
+              3
+            ],
+            [
+              "MAJ JANE CLARICE DE FARIA RAMOS",
+              3
+            ],
+            [
+              "MAJ FERNANDO CORREIA CRUZ",
+              1
+            ],
+            [
+              "MAJ THEO HENRIQUE PINHO MARQUES LEITE",
+              3
+            ],
+            [
+              "MAJ LUCIANA ALEXANDRINA JUCÁ",
+              3
+            ],
+            [
+              "CAP REDUVAL LINDOSO CAVALCANTI JÚNIOR",
+              3
+            ],
+            [
+              "CAP FERNANDA PEREIRA BARBOZA",
+              1
+            ],
+            [
+              "CAP CARLA SILVA GAMA",
+              3
+            ],
+            [
+              "1° TEN LUCCAS AUGUSTO FERREIRA RODRIGUES",
+              3
+            ],
+            [
+              "1° TEN ISABELLA CAROLINE RODRIGUES MACHADO",
+              3
+            ]
+          ]
+        },
+        {
+          "d": "11/11/2026",
+          "wd": "quarta-feira",
+          "r": [
+            [
+              "TEN CEL LUCIANA FERREIRA CAVALCANTE",
+              3
+            ],
+            [
+              "TEN CEL LEANDRO PATARO CALVÃO",
+              3
+            ],
+            [
+              "TEN CEL RENATA MALVEZZI MALDONADO",
+              3
+            ],
+            [
+              "TEN CEL ANA MARIA PIA GRILLO SBROCCA",
+              3
+            ],
+            [
+              "TEN CEL ALINE RODRIGUES CÂNDIDO MENDES ROSA",
+              3
+            ],
+            [
+              "TEN CEL BÁRBARA SILVA DO VALE",
+              3
+            ],
+            [
+              "TEN CEL LUCIANA MOTA AUGUSTO RANAURO",
+              3
+            ],
+            [
+              "MAJ RENATA MADDALENA MONTEIRO CONTREIRAS",
+              1
+            ],
+            [
+              "MAJ LUCIANA ALEXANDRINA JUCÁ",
+              3
+            ],
+            [
+              "CAP FERNANDA PEREIRA BARBOZA",
+              2
+            ],
+            [
+              "CAP RENATA DE OLIVEIRA MILAGRES TRISTÃO DA CUNHA",
+              3
+            ],
+            [
+              "1° TEN KALIL LUCAS FERREIRA MARIANO",
+              3
+            ],
+            [
+              "1° SGT ANA CLÁUDIA PONTES MONTEIRO SOARES",
+              3
+            ]
+          ]
+        },
+        {
+          "d": "12/11/2026",
+          "wd": "quinta-feira",
+          "r": [
+            [
+              "TEN CEL RENATA MALVEZZI MALDONADO",
+              3
+            ],
+            [
+              "TEN CEL MÔNICA DOS SANTOS MASCARENHAS",
+              3
+            ],
+            [
+              "TEN CEL ELAINE ELIAS LADISLAU CHEREM",
+              3
+            ],
+            [
+              "TEN CEL BÁRBARA SILVA DO VALE",
+              3
+            ],
+            [
+              "MAJ RENATA MADDALENA MONTEIRO CONTREIRAS",
+              1
+            ],
+            [
+              "CAP FERNANDA PEREIRA BARBOZA",
+              3
+            ],
+            [
+              "CAP CARLA SILVA GAMA",
+              3
+            ],
+            [
+              "CAP TÚLIO MEDINA GUERRA PEREIRA CALDAS",
+              3
+            ],
+            [
+              "1° TEN LUCCAS AUGUSTO FERREIRA RODRIGUES",
+              3
+            ]
+          ]
+        },
+        {
+          "d": "13/11/2026",
+          "wd": "sexta-feira",
+          "r": [
+            [
+              "TEN CEL LUCIANA FERREIRA CAVALCANTE",
+              3
+            ],
+            [
+              "TEN CEL ALEXANDRE MAGNO XAVIER SANTANA",
+              1
+            ],
+            [
+              "TEN CEL ANA MARIA PIA GRILLO SBROCCA",
+              3
+            ],
+            [
+              "MAJ JANE CLARICE DE FARIA RAMOS",
+              3
+            ],
+            [
+              "MAJ FERNANDO CORREIA CRUZ",
+              3
+            ],
+            [
+              "MAJ THEO HENRIQUE PINHO MARQUES LEITE",
+              3
+            ],
+            [
+              "1° SGT ANA CLÁUDIA PONTES MONTEIRO SOARES",
+              2
+            ]
+          ]
+        },
+        {
+          "d": "16/11/2026",
+          "wd": "segunda-feira",
+          "r": [
+            [
+              "TEN CEL CRISTIANA DE CARVALHO GRILLO",
+              3
+            ],
+            [
+              "TEN CEL ALEXANDRE MAGNO XAVIER SANTANA",
+              1
+            ],
+            [
+              "TEN CEL ELAINE ELIAS LADISLAU CHEREM",
+              3
+            ],
+            [
+              "TEN CEL LUCIANA MOTA AUGUSTO RANAURO",
+              3
+            ],
+            [
+              "MAJ FERNANDO CORREIA CRUZ",
+              2
+            ],
+            [
+              "CAP REDUVAL LINDOSO CAVALCANTI JÚNIOR",
+              3
+            ],
+            [
+              "CAP RENATA DE OLIVEIRA MILAGRES TRISTÃO DA CUNHA",
+              3
+            ],
+            [
+              "1° TEN ISABELLA CAROLINE RODRIGUES MACHADO",
+              3
+            ],
+            [
+              "1° SGT ANA CLÁUDIA PONTES MONTEIRO SOARES",
+              3
+            ]
+          ]
+        },
+        {
+          "d": "17/11/2026",
+          "wd": "terça-feira",
+          "r": [
+            [
+              "TEN CEL ALEXANDRE MAGNO XAVIER SANTANA",
+              3
+            ],
+            [
+              "TEN CEL ALESSANDRA FRANCO RIBEIRO",
+              3
+            ],
+            [
+              "TEN CEL MÔNICA DOS SANTOS MASCARENHAS",
+              3
+            ],
+            [
+              "TEN CEL ALINE RODRIGUES CÂNDIDO MENDES ROSA",
+              3
+            ],
+            [
+              "MAJ JANE CLARICE DE FARIA RAMOS",
+              3
+            ],
+            [
+              "MAJ FERNANDO CORREIA CRUZ",
+              1
+            ],
+            [
+              "MAJ THEO HENRIQUE PINHO MARQUES LEITE",
+              3
+            ],
+            [
+              "MAJ LUCIANA ALEXANDRINA JUCÁ",
+              3
+            ],
+            [
+              "CAP REDUVAL LINDOSO CAVALCANTI JÚNIOR",
+              3
+            ],
+            [
+              "CAP FERNANDA PEREIRA BARBOZA",
+              1
+            ],
+            [
+              "CAP CARLA SILVA GAMA",
+              3
+            ],
+            [
+              "1° TEN LUCCAS AUGUSTO FERREIRA RODRIGUES",
+              3
+            ],
+            [
+              "1° TEN ISABELLA CAROLINE RODRIGUES MACHADO",
+              3
+            ]
+          ]
+        },
+        {
+          "d": "18/11/2026",
+          "wd": "quarta-feira",
+          "r": [
+            [
+              "TEN CEL LUCIANA FERREIRA CAVALCANTE",
+              3
+            ],
+            [
+              "TEN CEL LEANDRO PATARO CALVÃO",
+              3
+            ],
+            [
+              "TEN CEL RENATA MALVEZZI MALDONADO",
+              3
+            ],
+            [
+              "TEN CEL ANA MARIA PIA GRILLO SBROCCA",
+              3
+            ],
+            [
+              "TEN CEL ALINE RODRIGUES CÂNDIDO MENDES ROSA",
+              3
+            ],
+            [
+              "TEN CEL BÁRBARA SILVA DO VALE",
+              3
+            ],
+            [
+              "TEN CEL LUCIANA MOTA AUGUSTO RANAURO",
+              3
+            ],
+            [
+              "MAJ RENATA MADDALENA MONTEIRO CONTREIRAS",
+              1
+            ],
+            [
+              "MAJ LUCIANA ALEXANDRINA JUCÁ",
+              3
+            ],
+            [
+              "CAP FERNANDA PEREIRA BARBOZA",
+              2
+            ],
+            [
+              "1° TEN KALIL LUCAS FERREIRA MARIANO",
+              3
+            ],
+            [
+              "1° SGT ANA CLÁUDIA PONTES MONTEIRO SOARES",
+              3
+            ]
+          ]
+        },
+        {
+          "d": "19/11/2026",
+          "wd": "quinta-feira",
+          "r": [
+            [
+              "TEN CEL RENATA MALVEZZI MALDONADO",
+              3
+            ],
+            [
+              "TEN CEL MÔNICA DOS SANTOS MASCARENHAS",
+              3
+            ],
+            [
+              "TEN CEL ELAINE ELIAS LADISLAU CHEREM",
+              3
+            ],
+            [
+              "TEN CEL BÁRBARA SILVA DO VALE",
+              3
+            ],
+            [
+              "MAJ RENATA MADDALENA MONTEIRO CONTREIRAS",
+              1
+            ],
+            [
+              "CAP FERNANDA PEREIRA BARBOZA",
+              3
+            ],
+            [
+              "CAP CARLA SILVA GAMA",
+              3
+            ],
+            [
+              "CAP TÚLIO MEDINA GUERRA PEREIRA CALDAS",
+              3
+            ],
+            [
+              "1° TEN LUCCAS AUGUSTO FERREIRA RODRIGUES",
+              3
+            ]
+          ]
+        },
+        {
+          "d": "20/11/2026",
+          "wd": "sexta-feira",
+          "r": [
+            [
+              "TEN CEL LUCIANA FERREIRA CAVALCANTE",
+              3
+            ],
+            [
+              "TEN CEL ALEXANDRE MAGNO XAVIER SANTANA",
+              1
+            ],
+            [
+              "TEN CEL ANA MARIA PIA GRILLO SBROCCA",
+              3
+            ],
+            [
+              "MAJ JANE CLARICE DE FARIA RAMOS",
+              3
+            ],
+            [
+              "MAJ FERNANDO CORREIA CRUZ",
+              3
+            ],
+            [
+              "MAJ THEO HENRIQUE PINHO MARQUES LEITE",
+              3
+            ],
+            [
+              "1° SGT ANA CLÁUDIA PONTES MONTEIRO SOARES",
+              2
+            ]
+          ]
+        },
+        {
+          "d": "22/11/2026",
+          "wd": "domingo",
+          "r": [
+            [
+              "TEN CEL CRISTIANA DE CARVALHO GRILLO",
+              3
+            ],
+            [
+              "TEN CEL ALEXANDRE MAGNO XAVIER SANTANA",
+              1
+            ],
+            [
+              "TEN CEL ELAINE ELIAS LADISLAU CHEREM",
+              3
+            ],
+            [
+              "TEN CEL LUCIANA MOTA AUGUSTO RANAURO",
+              3
+            ],
+            [
+              "MAJ FERNANDO CORREIA CRUZ",
+              2
+            ],
+            [
+              "CAP REDUVAL LINDOSO CAVALCANTI JÚNIOR",
+              3
+            ],
+            [
+              "CAP RENATA DE OLIVEIRA MILAGRES TRISTÃO DA CUNHA",
+              3
+            ],
+            [
+              "1° TEN ISABELLA CAROLINE RODRIGUES MACHADO",
+              3
+            ],
+            [
+              "1° SGT ANA CLÁUDIA PONTES MONTEIRO SOARES",
+              3
+            ]
+          ]
+        },
+        {
+          "d": "23/11/2026",
+          "wd": "segunda-feira",
+          "r": [
+            [
+              "TEN CEL ALEXANDRE MAGNO XAVIER SANTANA",
+              3
+            ],
+            [
+              "TEN CEL ALESSANDRA FRANCO RIBEIRO",
+              3
+            ],
+            [
+              "TEN CEL MÔNICA DOS SANTOS MASCARENHAS",
+              3
+            ],
+            [
+              "TEN CEL ALINE RODRIGUES CÂNDIDO MENDES ROSA",
+              3
+            ],
+            [
+              "MAJ JANE CLARICE DE FARIA RAMOS",
+              3
+            ],
+            [
+              "MAJ FERNANDO CORREIA CRUZ",
+              1
+            ],
+            [
+              "MAJ THEO HENRIQUE PINHO MARQUES LEITE",
+              3
+            ],
+            [
+              "MAJ LUCIANA ALEXANDRINA JUCÁ",
+              3
+            ],
+            [
+              "CAP REDUVAL LINDOSO CAVALCANTI JÚNIOR",
+              3
+            ],
+            [
+              "CAP FERNANDA PEREIRA BARBOZA",
+              1
+            ],
+            [
+              "CAP CARLA SILVA GAMA",
+              3
+            ],
+            [
+              "1° TEN LUCCAS AUGUSTO FERREIRA RODRIGUES",
+              3
+            ],
+            [
+              "1° TEN ISABELLA CAROLINE RODRIGUES MACHADO",
+              3
+            ]
+          ]
+        },
+        {
+          "d": "24/11/2026",
+          "wd": "terça-feira",
+          "r": [
+            [
+              "TEN CEL LUCIANA FERREIRA CAVALCANTE",
+              3
+            ],
+            [
+              "TEN CEL LEANDRO PATARO CALVÃO",
+              3
+            ],
+            [
+              "TEN CEL RENATA MALVEZZI MALDONADO",
+              3
+            ],
+            [
+              "TEN CEL ANA MARIA PIA GRILLO SBROCCA",
+              3
+            ],
+            [
+              "TEN CEL ALINE RODRIGUES CÂNDIDO MENDES ROSA",
+              3
+            ],
+            [
+              "TEN CEL BÁRBARA SILVA DO VALE",
+              3
+            ],
+            [
+              "TEN CEL LUCIANA MOTA AUGUSTO RANAURO",
+              3
+            ],
+            [
+              "MAJ RENATA MADDALENA MONTEIRO CONTREIRAS",
+              1
+            ],
+            [
+              "MAJ LUCIANA ALEXANDRINA JUCÁ",
+              3
+            ],
+            [
+              "CAP FERNANDA PEREIRA BARBOZA",
+              2
+            ],
+            [
+              "CAP RENATA DE OLIVEIRA MILAGRES TRISTÃO DA CUNHA",
+              3
+            ],
+            [
+              "1° TEN KALIL LUCAS FERREIRA MARIANO",
+              3
+            ],
+            [
+              "1° SGT ANA CLÁUDIA PONTES MONTEIRO SOARES",
+              3
+            ]
+          ]
+        },
+        {
+          "d": "25/11/2026",
+          "wd": "quarta-feira",
+          "r": [
+            [
+              "TEN CEL RENATA MALVEZZI MALDONADO",
+              3
+            ],
+            [
+              "TEN CEL MÔNICA DOS SANTOS MASCARENHAS",
+              3
+            ],
+            [
+              "TEN CEL ELAINE ELIAS LADISLAU CHEREM",
+              3
+            ],
+            [
+              "TEN CEL BÁRBARA SILVA DO VALE",
+              3
+            ],
+            [
+              "MAJ RENATA MADDALENA MONTEIRO CONTREIRAS",
+              1
+            ],
+            [
+              "CAP FERNANDA PEREIRA BARBOZA",
+              3
+            ],
+            [
+              "CAP CARLA SILVA GAMA",
+              3
+            ],
+            [
+              "CAP TÚLIO MEDINA GUERRA PEREIRA CALDAS",
+              3
+            ],
+            [
+              "1° TEN LUCCAS AUGUSTO FERREIRA RODRIGUES",
+              3
+            ]
+          ]
+        },
+        {
+          "d": "26/11/2026",
+          "wd": "quinta-feira",
+          "r": [
+            [
+              "TEN CEL LUCIANA FERREIRA CAVALCANTE",
+              3
+            ],
+            [
+              "TEN CEL ALEXANDRE MAGNO XAVIER SANTANA",
+              1
+            ],
+            [
+              "TEN CEL ANA MARIA PIA GRILLO SBROCCA",
+              3
+            ],
+            [
+              "MAJ JANE CLARICE DE FARIA RAMOS",
+              3
+            ],
+            [
+              "MAJ FERNANDO CORREIA CRUZ",
+              3
+            ],
+            [
+              "MAJ THEO HENRIQUE PINHO MARQUES LEITE",
+              3
+            ],
+            [
+              "1° SGT ANA CLÁUDIA PONTES MONTEIRO SOARES",
+              2
+            ]
+          ]
+        },
+        {
+          "d": "29/11/2026",
+          "wd": "domingo",
+          "r": [
+            [
+              "TEN CEL CRISTIANA DE CARVALHO GRILLO",
+              3
+            ],
+            [
+              "TEN CEL ALEXANDRE MAGNO XAVIER SANTANA",
+              1
+            ],
+            [
+              "TEN CEL ELAINE ELIAS LADISLAU CHEREM",
+              3
+            ],
+            [
+              "TEN CEL LUCIANA MOTA AUGUSTO RANAURO",
+              3
+            ],
+            [
+              "MAJ FERNANDO CORREIA CRUZ",
+              2
+            ],
+            [
+              "CAP REDUVAL LINDOSO CAVALCANTI JÚNIOR",
+              3
+            ],
+            [
+              "CAP RENATA DE OLIVEIRA MILAGRES TRISTÃO DA CUNHA",
+              3
+            ],
+            [
+              "1° TEN ISABELLA CAROLINE RODRIGUES MACHADO",
+              3
+            ],
+            [
+              "1° SGT ANA CLÁUDIA PONTES MONTEIRO SOARES",
+              3
+            ]
+          ]
+        },
+        {
+          "d": "30/11/2026",
+          "wd": "segunda-feira",
+          "r": [
+            [
+              "TEN CEL ALEXANDRE MAGNO XAVIER SANTANA",
+              3
+            ],
+            [
+              "TEN CEL ALESSANDRA FRANCO RIBEIRO",
+              3
+            ],
+            [
+              "TEN CEL MÔNICA DOS SANTOS MASCARENHAS",
+              3
+            ],
+            [
+              "TEN CEL ALINE RODRIGUES CÂNDIDO MENDES ROSA",
+              3
+            ],
+            [
+              "MAJ JANE CLARICE DE FARIA RAMOS",
+              3
+            ],
+            [
+              "MAJ FERNANDO CORREIA CRUZ",
+              1
+            ],
+            [
+              "MAJ THEO HENRIQUE PINHO MARQUES LEITE",
+              3
+            ],
+            [
+              "MAJ LUCIANA ALEXANDRINA JUCÁ",
+              3
+            ],
+            [
+              "CAP REDUVAL LINDOSO CAVALCANTI JÚNIOR",
+              3
+            ],
+            [
+              "CAP FERNANDA PEREIRA BARBOZA",
+              1
+            ],
+            [
+              "CAP CARLA SILVA GAMA",
+              3
+            ],
+            [
+              "1° TEN LUCCAS AUGUSTO FERREIRA RODRIGUES",
+              3
+            ],
+            [
+              "1° TEN ISABELLA CAROLINE RODRIGUES MACHADO",
+              3
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oficial",
+      "label": "Oficial de Dia",
+      "layout": "pair",
+      "cols_total": 3,
+      "unit": "designações",
+      "cols": [
+        "Oficial de Dia",
+        "Sobreaviso"
+      ],
+      "days": [
+        {
+          "d": "01/11/2026",
+          "wd": "domingo",
+          "a": [
+            {
+              "n": "CAP RENATA DE OLIVEIRA MILAGRES TRISTÃO DA CUNHA"
+            }
+          ],
+          "b": [
+            {
+              "n": "TEN CEL ALEXANDRE MAGNO XAVIER SANTANA"
+            }
+          ]
+        },
+        {
+          "d": "02/11/2026",
+          "wd": "segunda-feira",
+          "a": [
+            {
+              "n": "CAP REDUVAL LINDOSO CAVALCANTI JÚNIOR"
+            }
+          ],
+          "b": [
+            {
+              "n": "TEN CEL ELISÂNGELA MAIA FERREIRA"
+            }
+          ]
+        },
+        {
+          "d": "03/11/2026",
+          "wd": "terça-feira",
+          "a": [
+            {
+              "n": "TEN CEL FRANK RONALD MOREIRA COSTA"
+            }
+          ],
+          "b": [
+            {
+              "n": "1° TEN LUCCAS AUGUSTO FERREIRA RODRIGUES"
+            }
+          ]
+        },
+        {
+          "d": "04/11/2026",
+          "wd": "quarta-feira",
+          "a": [
+            {
+              "n": "TEN CEL ALINE RODRIGUES CÂNDIDO MENDES ROSA"
+            }
+          ],
+          "b": [
+            {
+              "n": "TEN CEL BÁRBARA SILVA DO VALE"
+            }
+          ]
+        },
+        {
+          "d": "05/11/2026",
+          "wd": "quinta-feira",
+          "a": [
+            {
+              "n": "CAP CARLA SILVA GAMA"
+            }
+          ],
+          "b": [
+            {
+              "n": "CAP FERNANDA PEREIRA BARBOZA"
+            }
+          ]
+        },
+        {
+          "d": "06/11/2026",
+          "wd": "sexta-feira",
+          "a": [
+            {
+              "n": "TEN CEL LUCIANA FERREIRA CAVALCANTE"
+            }
+          ],
+          "b": [
+            {
+              "n": "TEN CEL ALEXANDRE MAGNO XAVIER SANTANA"
+            }
+          ]
+        },
+        {
+          "d": "07/11/2026",
+          "wd": "sábado",
+          "a": [
+            {
+              "n": "1° TEN ISABELLA CAROLINE RODRIGUES MACHADO"
+            }
+          ],
+          "b": [
+            {
+              "n": "TEN CEL ANA MARIA PIA GRILLO SBROCCA"
+            }
+          ]
+        },
+        {
+          "d": "08/11/2026",
+          "wd": "domingo",
+          "a": [
+            {
+              "n": "TEN CEL LUCIANA MOTA AUGUSTO RANAURO"
+            }
+          ],
+          "b": [
+            {
+              "n": "CAP FERNANDA PEREIRA BARBOZA"
+            }
+          ]
+        },
+        {
+          "d": "09/11/2026",
+          "wd": "segunda-feira",
+          "a": [
+            {
+              "n": "TEN CEL ELAINE ELIAS LADISLAU CHEREM",
+              "t": "07h-17h"
+            },
+            {
+              "n": "CAP REDUVAL LINDOSO CAVALCANTI JÚNIOR",
+              "t": "17h-07h"
+            }
+          ],
+          "b": [
+            {
+              "n": "TEN CEL ELISÂNGELA MAIA FERREIRA"
+            }
+          ]
+        },
+        {
+          "d": "10/11/2026",
+          "wd": "terça-feira",
+          "a": [
+            {
+              "n": "CAP CARLA SILVA GAMA"
+            }
+          ],
+          "b": [
+            {
+              "n": "TEN CEL FRANK RONALD MOREIRA COSTA"
+            }
+          ]
+        },
+        {
+          "d": "11/11/2026",
+          "wd": "quarta-feira",
+          "a": [
+            {
+              "n": "TEN CEL LUCIANA MOTA AUGUSTO RANAURO"
+            }
+          ],
+          "b": [
+            {
+              "n": "CAP RENATA DE OLIVEIRA MILAGRES TRISTÃO DA CUNHA"
+            }
+          ]
+        },
+        {
+          "d": "12/11/2026",
+          "wd": "quinta-feira",
+          "a": [
+            {
+              "n": "CAP FERNANDA PEREIRA BARBOZA"
+            }
+          ],
+          "b": [
+            {
+              "n": "TEN CEL RENATA MALVEZZI MALDONADO"
+            }
+          ]
+        },
+        {
+          "d": "13/11/2026",
+          "wd": "sexta-feira",
+          "a": [
+            {
+              "n": "TEN CEL ALEXANDRE MAGNO XAVIER SANTANA"
+            }
+          ],
+          "b": [
+            {
+              "n": "MAJ JANE CLARICE DE FARIA RAMOS"
+            }
+          ]
+        },
+        {
+          "d": "14/11/2026",
+          "wd": "sábado",
+          "a": [
+            {
+              "n": "TEN CEL RENATA MALVEZZI MALDONADO"
+            }
+          ],
+          "b": [
+            {
+              "n": "TEN CEL LUCIANA FERREIRA CAVALCANTE"
+            }
+          ]
+        },
+        {
+          "d": "15/11/2026",
+          "wd": "domingo",
+          "a": [
+            {
+              "n": "TEN CEL FRANK RONALD MOREIRA COSTA"
+            }
+          ],
+          "b": [
+            {
+              "n": "CAP FERNANDA PEREIRA BARBOZA"
+            }
+          ]
+        },
+        {
+          "d": "16/11/2026",
+          "wd": "segunda-feira",
+          "a": [
+            {
+              "n": "1° TEN ISABELLA CAROLINE RODRIGUES MACHADO"
+            }
+          ],
+          "b": [
+            {
+              "n": "TEN CEL CRISTIANA DE CARVALHO GRILLO"
+            }
+          ]
+        },
+        {
+          "d": "17/11/2026",
+          "wd": "terça-feira",
+          "a": [
+            {
+              "n": "1° TEN LUCCAS AUGUSTO FERREIRA RODRIGUES"
+            }
+          ],
+          "b": [
+            {
+              "n": "CAP CARLA SILVA GAMA"
+            }
+          ]
+        },
+        {
+          "d": "18/11/2026",
+          "wd": "quarta-feira",
+          "a": [
+            {
+              "n": "CAP RENATA DE OLIVEIRA MILAGRES TRISTÃO DA CUNHA"
+            }
+          ],
+          "b": [
+            {
+              "n": "TEN CEL LUCIANA MOTA AUGUSTO RANAURO"
+            }
+          ]
+        },
+        {
+          "d": "19/11/2026",
+          "wd": "quinta-feira",
+          "a": [
+            {
+              "n": "TEN CEL RENATA MALVEZZI MALDONADO"
+            }
+          ],
+          "b": [
+            {
+              "n": "1° TEN LUCCAS AUGUSTO FERREIRA RODRIGUES"
+            }
+          ]
+        },
+        {
+          "d": "20/11/2026",
+          "wd": "sexta-feira",
+          "a": [
+            {
+              "n": "MAJ JANE CLARICE DE FARIA RAMOS"
+            }
+          ],
+          "b": [
+            {
+              "n": "TEN CEL ANA MARIA PIA GRILLO SBROCCA"
+            }
+          ]
+        },
+        {
+          "d": "21/11/2026",
+          "wd": "sábado",
+          "a": [
+            {
+              "n": "MAJ JANE CLARICE DE FARIA RAMOS"
+            }
+          ],
+          "b": [
+            {
+              "n": "1° TEN LUCCAS AUGUSTO FERREIRA RODRIGUES"
+            }
+          ]
+        },
+        {
+          "d": "22/11/2026",
+          "wd": "domingo",
+          "a": [
+            {
+              "n": "CAP REDUVAL LINDOSO CAVALCANTI JÚNIOR"
+            }
+          ],
+          "b": [
+            {
+              "n": "TEN CEL CRISTIANA DE CARVALHO GRILLO"
+            }
+          ]
+        },
+        {
+          "d": "23/11/2026",
+          "wd": "segunda-feira",
+          "a": [
+            {
+              "n": "TEN CEL CRISTIANA DE CARVALHO GRILLO"
+            }
+          ],
+          "b": [
+            {
+              "n": "CAP RENATA DE OLIVEIRA MILAGRES TRISTÃO DA CUNHA"
+            }
+          ]
+        },
+        {
+          "d": "24/11/2026",
+          "wd": "terça-feira",
+          "a": [
+            {
+              "n": "1° TEN ISABELLA CAROLINE RODRIGUES MACHADO"
+            }
+          ],
+          "b": [
+            {
+              "n": "TEN CEL MÔNICA DOS SANTOS MASCARENHAS"
+            }
+          ]
+        },
+        {
+          "d": "25/11/2026",
+          "wd": "quarta-feira",
+          "a": [
+            {
+              "n": "TEN CEL BÁRBARA SILVA DO VALE"
+            }
+          ],
+          "b": [
+            {
+              "n": "TEN CEL ALINE RODRIGUES CÂNDIDO MENDES ROSA"
+            }
+          ]
+        },
+        {
+          "d": "26/11/2026",
+          "wd": "quinta-feira",
+          "a": [
+            {
+              "n": "TEN CEL MÔNICA DOS SANTOS MASCARENHAS"
+            }
+          ],
+          "b": [
+            {
+              "n": "TEN CEL FRANK RONALD MOREIRA COSTA"
+            }
+          ]
+        },
+        {
+          "d": "27/11/2026",
+          "wd": "sexta-feira",
+          "a": [
+            {
+              "n": "TEN CEL ANA MARIA PIA GRILLO SBROCCA"
+            }
+          ],
+          "b": [
+            {
+              "n": "MAJ JANE CLARICE DE FARIA RAMOS"
+            }
+          ]
+        },
+        {
+          "d": "28/11/2026",
+          "wd": "sábado",
+          "a": [
+            {
+              "n": "TEN CEL ALINE RODRIGUES CÂNDIDO MENDES ROSA"
+            }
+          ],
+          "b": [
+            {
+              "n": "TEN CEL BÁRBARA SILVA DO VALE"
+            }
+          ]
+        },
+        {
+          "d": "29/11/2026",
+          "wd": "domingo",
+          "a": [
+            {
+              "n": "CAP CARLA SILVA GAMA"
+            }
+          ],
+          "b": [
+            {
+              "n": "TEN CEL ALEXANDRE MAGNO XAVIER SANTANA"
+            }
+          ]
+        },
+        {
+          "d": "30/11/2026",
+          "wd": "segunda-feira",
+          "a": [
+            {
+              "n": "TEN CEL ELISÂNGELA MAIA FERREIRA"
+            }
+          ],
+          "b": [
+            {
+              "n": "CAP REDUVAL LINDOSO CAVALCANTI JÚNIOR"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spa",
+      "label": "SPA",
+      "short": "Serviço de Pronto Atendimento (SPA)",
+      "layout": "shift",
+      "cols_total": 4,
+      "unit": "turnos",
+      "days": [
+        {
+          "d": "02/11/2026",
+          "wd": "segunda-feira",
+          "r": [
+            [
+              "TEN CEL ALEXANDRE MAGNO XAVIER SANTANA",
+              1
+            ],
+            [
+              "MAJ FERNANDO CORREIA CRUZ",
+              2
+            ]
+          ]
+        },
+        {
+          "d": "03/11/2026",
+          "wd": "terça-feira",
+          "r": [
+            [
+              "MAJ JANE CLARICE DE FARIA RAMOS",
+              1
+            ],
+            [
+              "CAP REDUVAL LINDOSO CAVALCANTI JÚNIOR",
+              2
+            ]
+          ]
+        },
+        {
+          "d": "04/11/2026",
+          "wd": "quarta-feira",
+          "r": [
+            [
+              "TEN CEL LEANDRO PATARO CALVÃO",
+              1
+            ],
+            [
+              "TEN CEL RENATA MALVEZZI MALDONADO",
+              2
+            ]
+          ]
+        },
+        {
+          "d": "05/11/2026",
+          "wd": "quinta-feira",
+          "r": [
+            [
+              "CAP CARLA SILVA GAMA",
+              1
+            ],
+            [
+              "CAP TÚLIO MEDINA GUERRA PEREIRA CALDAS",
+              2
+            ]
+          ]
+        },
+        {
+          "d": "06/11/2026",
+          "wd": "sexta-feira",
+          "r": [
+            [
+              "TEN CEL ALEXANDRE MAGNO XAVIER SANTANA",
+              1
+            ],
+            [
+              "TEN CEL LUCIANA FERREIRA CAVALCANTE",
+              2
+            ]
+          ]
+        },
+        {
+          "d": "09/11/2026",
+          "wd": "segunda-feira",
+          "r": [
+            [
+              "TEN CEL ALEXANDRE MAGNO XAVIER SANTANA",
+              1
+            ],
+            [
+              "MAJ FERNANDO CORREIA CRUZ",
+              2
+            ]
+          ]
+        },
+        {
+          "d": "10/11/2026",
+          "wd": "terça-feira",
+          "r": [
+            [
+              "CAP FERNANDA PEREIRA BARBOZA",
+              1
+            ],
+            [
+              "CAP REDUVAL LINDOSO CAVALCANTI JÚNIOR",
+              2
+            ]
+          ]
+        },
+        {
+          "d": "11/11/2026",
+          "wd": "quarta-feira",
+          "r": [
+            [
+              "TEN CEL LEANDRO PATARO CALVÃO",
+              1
+            ],
+            [
+              "TEN CEL LUCIANA FERREIRA CAVALCANTE",
+              3
+            ]
+          ]
+        },
+        {
+          "d": "12/11/2026",
+          "wd": "quinta-feira",
+          "r": [
+            [
+              "CAP CARLA SILVA GAMA",
+              1
+            ],
+            [
+              "CAP TÚLIO MEDINA GUERRA PEREIRA CALDAS",
+              2
+            ]
+          ]
+        },
+        {
+          "d": "13/11/2026",
+          "wd": "sexta-feira",
+          "r": [
+            [
+              "MAJ JANE CLARICE DE FARIA RAMOS",
+              1
+            ],
+            [
+              "MAJ THEO HENRIQUE PINHO MARQUES LEITE",
+              2
+            ]
+          ]
+        },
+        {
+          "d": "16/11/2026",
+          "wd": "segunda-feira",
+          "r": [
+            [
+              "TEN CEL ALEXANDRE MAGNO XAVIER SANTANA",
+              1
+            ],
+            [
+              "MAJ FERNANDO CORREIA CRUZ",
+              2
+            ]
+          ]
+        },
+        {
+          "d": "17/11/2026",
+          "wd": "terça-feira",
+          "r": [
+            [
+              "CAP FERNANDA PEREIRA BARBOZA",
+              1
+            ],
+            [
+              "CAP REDUVAL LINDOSO CAVALCANTI JÚNIOR",
+              2
+            ]
+          ]
+        },
+        {
+          "d": "18/11/2026",
+          "wd": "quarta-feira",
+          "r": [
+            [
+              "TEN CEL LEANDRO PATARO CALVÃO",
+              1
+            ],
+            [
+              "TEN CEL LUCIANA FERREIRA CAVALCANTE",
+              2
+            ]
+          ]
+        },
+        {
+          "d": "19/11/2026",
+          "wd": "quinta-feira",
+          "r": [
+            [
+              "CAP CARLA SILVA GAMA",
+              1
+            ],
+            [
+              "CAP TÚLIO MEDINA GUERRA PEREIRA CALDAS",
+              2
+            ]
+          ]
+        },
+        {
+          "d": "20/11/2026",
+          "wd": "sexta-feira",
+          "r": [
+            [
+              "MAJ JANE CLARICE DE FARIA RAMOS",
+              1
+            ],
+            [
+              "MAJ THEO HENRIQUE PINHO MARQUES LEITE",
+              2
+            ]
+          ]
+        },
+        {
+          "d": "23/11/2026",
+          "wd": "segunda-feira",
+          "r": [
+            [
+              "TEN CEL ALEXANDRE MAGNO XAVIER SANTANA",
+              1
+            ],
+            [
+              "MAJ FERNANDO CORREIA CRUZ",
+              2
+            ]
+          ]
+        },
+        {
+          "d": "24/11/2026",
+          "wd": "terça-feira",
+          "r": [
+            [
+              "CAP FERNANDA PEREIRA BARBOZA",
+              1
+            ],
+            [
+              "CAP REDUVAL LINDOSO CAVALCANTI JÚNIOR",
+              2
+            ]
+          ]
+        },
+        {
+          "d": "25/11/2026",
+          "wd": "quarta-feira",
+          "r": [
+            [
+              "TEN CEL LEANDRO PATARO CALVÃO",
+              1
+            ],
+            [
+              "TEN CEL LUCIANA FERREIRA CAVALCANTE",
+              2
+            ]
+          ]
+        },
+        {
+          "d": "26/11/2026",
+          "wd": "quinta-feira",
+          "r": [
+            [
+              "CAP CARLA SILVA GAMA",
+              1
+            ],
+            [
+              "TEN CEL RENATA MALVEZZI MALDONADO",
+              2
+            ]
+          ]
+        },
+        {
+          "d": "27/11/2026",
+          "wd": "sexta-feira",
+          "r": [
+            [
+              "MAJ JANE CLARICE DE FARIA RAMOS",
+              1
+            ],
+            [
+              "MAJ THEO HENRIQUE PINHO MARQUES LEITE",
+              2
+            ]
+          ]
+        },
+        {
+          "d": "30/11/2026",
+          "wd": "segunda-feira",
+          "r": [
+            [
+              "TEN CEL ALEXANDRE MAGNO XAVIER SANTANA",
+              1
+            ],
+            [
+              "MAJ FERNANDO CORREIA CRUZ",
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "permanencia",
+      "label": "Permanência",
+      "layout": "pair",
+      "cols_total": 3,
+      "unit": "designações",
+      "cols": [
+        "Permanência",
+        "Sobreaviso"
+      ],
+      "days": [
+        {
+          "d": "01/11/2026",
+          "wd": "domingo",
+          "a": [
+            {
+              "n": "2° SGT MARCOS ANTÔNIO MELO DAS CHAGAS"
+            }
+          ],
+          "b": [
+            {
+              "n": "2° SGT CARLOS RONALDO VIANA DA COSTA"
+            }
+          ]
+        },
+        {
+          "d": "02/11/2026",
+          "wd": "segunda-feira",
+          "a": [
+            {
+              "n": "SUBTEN SANDRO LUIZ DE SOUZA"
+            }
+          ],
+          "b": [
+            {
+              "n": "SUBTEN GILE PIRES MENDONÇA MORAIS"
+            }
+          ]
+        },
+        {
+          "d": "03/11/2026",
+          "wd": "terça-feira",
+          "a": [
+            {
+              "n": "SUBTEN FRANCISCO ACLEUSSO MEDEIROS DE SOUZA"
+            }
+          ],
+          "b": [
+            {
+              "n": "2° SGT MARCOS ANTÔNIO MELO DAS CHAGAS"
+            }
+          ]
+        },
+        {
+          "d": "04/11/2026",
+          "wd": "quarta-feira",
+          "a": [
+            {
+              "n": "2° SGT CARLOS RONALDO VIANA DA COSTA"
+            }
+          ],
+          "b": [
+            {
+              "n": "SUBTEN FRANCISCO ACLEUSSO MEDEIROS DE SOUZA"
+            }
+          ]
+        },
+        {
+          "d": "05/11/2026",
+          "wd": "quinta-feira",
+          "a": [
+            {
+              "n": "SUBTEN GILE PIRES MENDONÇA MORAIS"
+            }
+          ],
+          "b": [
+            {
+              "n": "SUBTEN SANDRO LUIZ DE SOUZA"
+            }
+          ]
+        },
+        {
+          "d": "06/11/2026",
+          "wd": "sexta-feira",
+          "a": [
+            {
+              "n": "2° SGT MARCOS ANTÔNIO MELO DAS CHAGAS"
+            }
+          ],
+          "b": [
+            {
+              "n": "2° SGT CARLOS RONALDO VIANA DA COSTA"
+            }
+          ]
+        },
+        {
+          "d": "07/11/2026",
+          "wd": "sábado",
+          "a": [
+            {
+              "n": "SUBTEN SANDRO LUIZ DE SOUZA"
+            }
+          ],
+          "b": [
+            {
+              "n": "SUBTEN GILE PIRES MENDONÇA MORAIS"
+            }
+          ]
+        },
+        {
+          "d": "08/11/2026",
+          "wd": "domingo",
+          "a": [
+            {
+              "n": "SUBTEN FRANCISCO ACLEUSSO MEDEIROS DE SOUZA"
+            }
+          ],
+          "b": [
+            {
+              "n": "2° SGT MARCOS ANTÔNIO MELO DAS CHAGAS"
+            }
+          ]
+        },
+        {
+          "d": "09/11/2026",
+          "wd": "segunda-feira",
+          "a": [
+            {
+              "n": "2° SGT CARLOS RONALDO VIANA DA COSTA"
+            }
+          ],
+          "b": [
+            {
+              "n": "SUBTEN FRANCISCO ACLEUSSO MEDEIROS DE SOUZA"
+            }
+          ]
+        },
+        {
+          "d": "10/11/2026",
+          "wd": "terça-feira",
+          "a": [
+            {
+              "n": "SUBTEN GILE PIRES MENDONÇA MORAIS"
+            }
+          ],
+          "b": [
+            {
+              "n": "SUBTEN SANDRO LUIZ DE SOUZA"
+            }
+          ]
+        },
+        {
+          "d": "11/11/2026",
+          "wd": "quarta-feira",
+          "a": [
+            {
+              "n": "2° SGT MARCOS ANTÔNIO MELO DAS CHAGAS"
+            }
+          ],
+          "b": [
+            {
+              "n": "2° SGT CARLOS RONALDO VIANA DA COSTA"
+            }
+          ]
+        },
+        {
+          "d": "12/11/2026",
+          "wd": "quinta-feira",
+          "a": [
+            {
+              "n": "SUBTEN SANDRO LUIZ DE SOUZA"
+            }
+          ],
+          "b": [
+            {
+              "n": "SUBTEN GILE PIRES MENDONÇA MORAIS"
+            }
+          ]
+        },
+        {
+          "d": "13/11/2026",
+          "wd": "sexta-feira",
+          "a": [
+            {
+              "n": "SUBTEN FRANCISCO ACLEUSSO MEDEIROS DE SOUZA"
+            }
+          ],
+          "b": [
+            {
+              "n": "2° SGT MARCOS ANTÔNIO MELO DAS CHAGAS"
+            }
+          ]
+        },
+        {
+          "d": "14/11/2026",
+          "wd": "sábado",
+          "a": [
+            {
+              "n": "2° SGT CARLOS RONALDO VIANA DA COSTA"
+            }
+          ],
+          "b": [
+            {
+              "n": "SUBTEN FRANCISCO ACLEUSSO MEDEIROS DE SOUZA"
+            }
+          ]
+        },
+        {
+          "d": "15/11/2026",
+          "wd": "domingo",
+          "a": [
+            {
+              "n": "SUBTEN GILE PIRES MENDONÇA MORAIS"
+            }
+          ],
+          "b": [
+            {
+              "n": "SUBTEN SANDRO LUIZ DE SOUZA"
+            }
+          ]
+        },
+        {
+          "d": "16/11/2026",
+          "wd": "segunda-feira",
+          "a": [
+            {
+              "n": "2° SGT MARCOS ANTÔNIO MELO DAS CHAGAS"
+            }
+          ],
+          "b": [
+            {
+              "n": "2° SGT CARLOS RONALDO VIANA DA COSTA"
+            }
+          ]
+        },
+        {
+          "d": "17/11/2026",
+          "wd": "terça-feira",
+          "a": [
+            {
+              "n": "SUBTEN SANDRO LUIZ DE SOUZA"
+            }
+          ],
+          "b": [
+            {
+              "n": "SUBTEN GILE PIRES MENDONÇA MORAIS"
+            }
+          ]
+        },
+        {
+          "d": "18/11/2026",
+          "wd": "quarta-feira",
+          "a": [
+            {
+              "n": "SUBTEN FRANCISCO ACLEUSSO MEDEIROS DE SOUZA"
+            }
+          ],
+          "b": [
+            {
+              "n": "2° SGT MARCOS ANTÔNIO MELO DAS CHAGAS"
+            }
+          ]
+        },
+        {
+          "d": "19/11/2026",
+          "wd": "quinta-feira",
+          "a": [
+            {
+              "n": "2° SGT CARLOS RONALDO VIANA DA COSTA"
+            }
+          ],
+          "b": [
+            {
+              "n": "SUBTEN FRANCISCO ACLEUSSO MEDEIROS DE SOUZA"
+            }
+          ]
+        },
+        {
+          "d": "20/11/2026",
+          "wd": "sexta-feira",
+          "a": [
+            {
+              "n": "SUBTEN GILE PIRES MENDONÇA MORAIS"
+            }
+          ],
+          "b": [
+            {
+              "n": "SUBTEN SANDRO LUIZ DE SOUZA"
+            }
+          ]
+        },
+        {
+          "d": "21/11/2026",
+          "wd": "sábado",
+          "a": [
+            {
+              "n": "2° SGT MARCOS ANTÔNIO MELO DAS CHAGAS"
+            }
+          ],
+          "b": [
+            {
+              "n": "2° SGT CARLOS RONALDO VIANA DA COSTA"
+            }
+          ]
+        },
+        {
+          "d": "22/11/2026",
+          "wd": "domingo",
+          "a": [
+            {
+              "n": "SUBTEN SANDRO LUIZ DE SOUZA"
+            }
+          ],
+          "b": [
+            {
+              "n": "SUBTEN GILE PIRES MENDONÇA MORAIS"
+            }
+          ]
+        },
+        {
+          "d": "23/11/2026",
+          "wd": "segunda-feira",
+          "a": [
+            {
+              "n": "SUBTEN FRANCISCO ACLEUSSO MEDEIROS DE SOUZA"
+            }
+          ],
+          "b": [
+            {
+              "n": "2° SGT MARCOS ANTÔNIO MELO DAS CHAGAS"
+            }
+          ]
+        },
+        {
+          "d": "24/11/2026",
+          "wd": "terça-feira",
+          "a": [
+            {
+              "n": "2° SGT CARLOS RONALDO VIANA DA COSTA"
+            }
+          ],
+          "b": [
+            {
+              "n": "SUBTEN FRANCISCO ACLEUSSO MEDEIROS DE SOUZA"
+            }
+          ]
+        },
+        {
+          "d": "25/11/2026",
+          "wd": "quarta-feira",
+          "a": [
+            {
+              "n": "SUBTEN GILE PIRES MENDONÇA MORAIS"
+            }
+          ],
+          "b": [
+            {
+              "n": "SUBTEN SANDRO LUIZ DE SOUZA"
+            }
+          ]
+        },
+        {
+          "d": "26/11/2026",
+          "wd": "quinta-feira",
+          "a": [
+            {
+              "n": "2° SGT MARCOS ANTÔNIO MELO DAS CHAGAS"
+            }
+          ],
+          "b": [
+            {
+              "n": "2° SGT CARLOS RONALDO VIANA DA COSTA"
+            }
+          ]
+        },
+        {
+          "d": "27/11/2026",
+          "wd": "sexta-feira",
+          "a": [
+            {
+              "n": "SUBTEN SANDRO LUIZ DE SOUZA"
+            }
+          ],
+          "b": [
+            {
+              "n": "SUBTEN GILE PIRES MENDONÇA MORAIS"
+            }
+          ]
+        },
+        {
+          "d": "28/11/2026",
+          "wd": "sábado",
+          "a": [
+            {
+              "n": "SUBTEN FRANCISCO ACLEUSSO MEDEIROS DE SOUZA"
+            }
+          ],
+          "b": [
+            {
+              "n": "2° SGT MARCOS ANTÔNIO MELO DAS CHAGAS"
+            }
+          ]
+        },
+        {
+          "d": "29/11/2026",
+          "wd": "domingo",
+          "a": [
+            {
+              "n": "2° SGT CARLOS RONALDO VIANA DA COSTA"
+            }
+          ],
+          "b": [
+            {
+              "n": "SUBTEN FRANCISCO ACLEUSSO MEDEIROS DE SOUZA"
+            }
+          ]
+        },
+        {
+          "d": "30/11/2026",
+          "wd": "segunda-feira",
+          "a": [
+            {
+              "n": "SUBTEN GILE PIRES MENDONÇA MORAIS"
+            }
+          ],
+          "b": [
+            {
+              "n": "SUBTEN SANDRO LUIZ DE SOUZA"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "administrativo",
+      "label": "Administrativo",
+      "layout": "team",
+      "cols_total": 3,
+      "unit": "presenças",
+      "days": [
+        {
+          "d": "02/11/2026",
+          "wd": "segunda-feira",
+          "t": [
+            "TEN CEL ELISÂNGELA MAIA FERREIRA",
+            "SUBTEN REGINA CARDOSO",
+            "SUBTEN MICHELLE QUIMA DA SILVA",
+            "SUBTEN WILSON RIBEIRO DE ARAÚJO",
+            "1° SGT CLÁUDIA VALENTINA DA CUNHA E SILVA"
+          ]
+        },
+        {
+          "d": "03/11/2026",
+          "wd": "terça-feira",
+          "t": [
+            "TEN CEL ELISÂNGELA MAIA FERREIRA",
+            "SUBTEN REGINA CARDOSO",
+            "1° SGT VANESSA PAES LEME DE LUCA",
+            "2° SGT LUIZ OLIVEIRA DO NASCIMENTO",
+            "2° SGT LUIZ ANTÔNIO DA SILVA BARRETO JÚNIOR",
+            "3° SGT FABIANE TAUBE MARQUES"
+          ]
+        },
+        {
+          "d": "04/11/2026",
+          "wd": "quarta-feira",
+          "t": [
+            "2° TEN ANALICE ROCHA BANDEIRA",
+            "SUBTEN MICHELLE QUIMA DA SILVA",
+            "SUBTEN WILSON RIBEIRO DE ARAÚJO",
+            "1° SGT CLÁUDIA VALENTINA DA CUNHA E SILVA"
+          ]
+        },
+        {
+          "d": "05/11/2026",
+          "wd": "quinta-feira",
+          "t": [
+            "2° TEN ANALICE ROCHA BANDEIRA",
+            "1° SGT VANESSA PAES LEME DE LUCA",
+            "2° SGT LUIZ OLIVEIRA DO NASCIMENTO",
+            "2° SGT LUIZ ANTÔNIO DA SILVA BARRETO JÚNIOR",
+            "3° SGT FABIANE TAUBE MARQUES"
+          ]
+        },
+        {
+          "d": "06/11/2026",
+          "wd": "sexta-feira",
+          "t": [
+            "SUBTEN REGINA CARDOSO",
+            "SUBTEN MICHELLE QUIMA DA SILVA",
+            "SUBTEN WILSON RIBEIRO DE ARAÚJO",
+            "1° SGT CLÁUDIA VALENTINA DA CUNHA E SILVA"
+          ]
+        },
+        {
+          "d": "09/11/2026",
+          "wd": "segunda-feira",
+          "t": [
+            "TEN CEL ELISÂNGELA MAIA FERREIRA",
+            "1° SGT VANESSA PAES LEME DE LUCA",
+            "2° SGT LUIZ OLIVEIRA DO NASCIMENTO",
+            "2° SGT LUIZ ANTÔNIO DA SILVA BARRETO JÚNIOR",
+            "3° SGT FABIANE TAUBE MARQUES"
+          ]
+        },
+        {
+          "d": "10/11/2026",
+          "wd": "terça-feira",
+          "t": [
+            "TEN CEL ELISÂNGELA MAIA FERREIRA",
+            "SUBTEN REGINA CARDOSO",
+            "SUBTEN MICHELLE QUIMA DA SILVA",
+            "SUBTEN WILSON RIBEIRO DE ARAÚJO",
+            "1° SGT CLÁUDIA VALENTINA DA CUNHA E SILVA"
+          ]
+        },
+        {
+          "d": "11/11/2026",
+          "wd": "quarta-feira",
+          "t": [
+            "2° TEN ANALICE ROCHA BANDEIRA",
+            "1° SGT VANESSA PAES LEME DE LUCA",
+            "2° SGT LUIZ OLIVEIRA DO NASCIMENTO",
+            "2° SGT LUIZ ANTÔNIO DA SILVA BARRETO JÚNIOR",
+            "3° SGT FABIANE TAUBE MARQUES"
+          ]
+        },
+        {
+          "d": "12/11/2026",
+          "wd": "quinta-feira",
+          "t": [
+            "2° TEN ANALICE ROCHA BANDEIRA",
+            "SUBTEN MICHELLE QUIMA DA SILVA",
+            "SUBTEN WILSON RIBEIRO DE ARAÚJO",
+            "1° SGT CLÁUDIA VALENTINA DA CUNHA E SILVA"
+          ]
+        },
+        {
+          "d": "13/11/2026",
+          "wd": "sexta-feira",
+          "t": [
+            "SUBTEN REGINA CARDOSO",
+            "1° SGT VANESSA PAES LEME DE LUCA",
+            "2° SGT LUIZ OLIVEIRA DO NASCIMENTO",
+            "2° SGT LUIZ ANTÔNIO DA SILVA BARRETO JÚNIOR",
+            "3° SGT FABIANE TAUBE MARQUES"
+          ]
+        },
+        {
+          "d": "16/11/2026",
+          "wd": "segunda-feira",
+          "t": [
+            "TEN CEL ELISÂNGELA MAIA FERREIRA",
+            "SUBTEN REGINA CARDOSO",
+            "SUBTEN MICHELLE QUIMA DA SILVA",
+            "SUBTEN WILSON RIBEIRO DE ARAÚJO",
+            "1° SGT CLÁUDIA VALENTINA DA CUNHA E SILVA"
+          ]
+        },
+        {
+          "d": "17/11/2026",
+          "wd": "terça-feira",
+          "t": [
+            "TEN CEL ELISÂNGELA MAIA FERREIRA",
+            "SUBTEN REGINA CARDOSO",
+            "1° SGT CLÁUDIA VALENTINA DA CUNHA E SILVA",
+            "1° SGT VANESSA PAES LEME DE LUCA",
+            "2° SGT LUIZ OLIVEIRA DO NASCIMENTO",
+            "2° SGT LUIZ ANTÔNIO DA SILVA BARRETO JÚNIOR",
+            "3° SGT FABIANE TAUBE MARQUES"
+          ]
+        },
+        {
+          "d": "18/11/2026",
+          "wd": "quarta-feira",
+          "t": [
+            "2° TEN ANALICE ROCHA BANDEIRA",
+            "SUBTEN MICHELLE QUIMA DA SILVA",
+            "SUBTEN WILSON RIBEIRO DE ARAÚJO"
+          ]
+        },
+        {
+          "d": "19/11/2026",
+          "wd": "quinta-feira",
+          "t": [
+            "2° TEN ANALICE ROCHA BANDEIRA",
+            "1° SGT VANESSA PAES LEME DE LUCA",
+            "2° SGT LUIZ OLIVEIRA DO NASCIMENTO",
+            "2° SGT LUIZ ANTÔNIO DA SILVA BARRETO JÚNIOR",
+            "3° SGT FABIANE TAUBE MARQUES"
+          ]
+        },
+        {
+          "d": "20/11/2026",
+          "wd": "sexta-feira",
+          "t": [
+            "SUBTEN REGINA CARDOSO",
+            "SUBTEN MICHELLE QUIMA DA SILVA",
+            "SUBTEN WILSON RIBEIRO DE ARAÚJO",
+            "1° SGT CLÁUDIA VALENTINA DA CUNHA E SILVA"
+          ]
+        },
+        {
+          "d": "23/11/2026",
+          "wd": "segunda-feira",
+          "t": [
+            "TEN CEL ELISÂNGELA MAIA FERREIRA",
+            "1° SGT CLÁUDIA VALENTINA DA CUNHA E SILVA",
+            "2° SGT LUIZ OLIVEIRA DO NASCIMENTO",
+            "2° SGT LUIZ ANTÔNIO DA SILVA BARRETO JÚNIOR",
+            "3° SGT FABIANE TAUBE MARQUES"
+          ]
+        },
+        {
+          "d": "24/11/2026",
+          "wd": "terça-feira",
+          "t": [
+            "TEN CEL ELISÂNGELA MAIA FERREIRA",
+            "SUBTEN REGINA CARDOSO",
+            "SUBTEN MICHELLE QUIMA DA SILVA",
+            "SUBTEN WILSON RIBEIRO DE ARAÚJO"
+          ]
+        },
+        {
+          "d": "25/11/2026",
+          "wd": "quarta-feira",
+          "t": [
+            "2° TEN ANALICE ROCHA BANDEIRA",
+            "1° SGT CLÁUDIA VALENTINA DA CUNHA E SILVA",
+            "2° SGT LUIZ OLIVEIRA DO NASCIMENTO",
+            "2° SGT LUIZ ANTÔNIO DA SILVA BARRETO JÚNIOR",
+            "3° SGT FABIANE TAUBE MARQUES"
+          ]
+        },
+        {
+          "d": "26/11/2026",
+          "wd": "quinta-feira",
+          "t": [
+            "2° TEN ANALICE ROCHA BANDEIRA",
+            "SUBTEN MICHELLE QUIMA DA SILVA",
+            "SUBTEN WILSON RIBEIRO DE ARAÚJO"
+          ]
+        },
+        {
+          "d": "27/11/2026",
+          "wd": "sexta-feira",
+          "t": [
+            "SUBTEN REGINA CARDOSO",
+            "1° SGT CLÁUDIA VALENTINA DA CUNHA E SILVA",
+            "2° SGT LUIZ OLIVEIRA DO NASCIMENTO",
+            "2° SGT LUIZ ANTÔNIO DA SILVA BARRETO JÚNIOR",
+            "3° SGT FABIANE TAUBE MARQUES"
+          ]
+        },
+        {
+          "d": "30/11/2026",
+          "wd": "segunda-feira",
+          "t": [
+            "TEN CEL ELISÂNGELA MAIA FERREIRA",
+            "SUBTEN REGINA CARDOSO",
+            "SUBTEN MICHELLE QUIMA DA SILVA",
+            "SUBTEN WILSON RIBEIRO DE ARAÚJO",
+            "1° SGT CLÁUDIA VALENTINA DA CUNHA E SILVA"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "enfermagem",
+      "label": "Enfermagem",
+      "layout": "team",
+      "cols_total": 3,
+      "unit": "presenças",
+      "days": [
+        {
+          "d": "02/11/2026",
+          "wd": "segunda-feira",
+          "t": [],
+          "feriado": "FERIADO - DIA DE FINADOS"
+        },
+        {
+          "d": "03/11/2026",
+          "wd": "terça-feira",
+          "t": [
+            "TEN CEL FRANK RONALD MOREIRA COSTA",
+            "SUBTEN LUCIMAR DA ROCHA COTTA",
+            "SUBTEN CÉLIA MARTINS DA SILVA TEIXEIRA",
+            "SUBTEN PATRÍCIA ANDRADE GOLFETTO",
+            "1° SGT SÍLVIA GOMES DE LIMA"
+          ]
+        },
+        {
+          "d": "04/11/2026",
+          "wd": "quarta-feira",
+          "t": [
+            "TEN CEL ANA MARIA PIA GRILLO SBROCCA",
+            "CAP RENATA DE OLIVEIRA MILAGRES TRISTÃO DA CUNHA",
+            "SUBTEN ROSILANE PROENÇA SACHINHO DA COSTA",
+            "SUBTEN ANA CLARA TEIXEIRA BECHTLUFFT",
+            "SUBTEN SEVERINA PEREIRA ALVES",
+            "1° SGT KÁTIA TORRES BIONDI"
+          ]
+        },
+        {
+          "d": "05/11/2026",
+          "wd": "quinta-feira",
+          "t": [
+            "TEN CEL FRANK RONALD MOREIRA COSTA",
+            "SUBTEN LUCIMAR DA ROCHA COTTA",
+            "SUBTEN CÉLIA MARTINS DA SILVA TEIXEIRA",
+            "SUBTEN PATRÍCIA ANDRADE GOLFETTO",
+            "1° SGT SÍLVIA GOMES DE LIMA"
+          ]
+        },
+        {
+          "d": "06/11/2026",
+          "wd": "sexta-feira",
+          "t": [
+            "TEN CEL ANA MARIA PIA GRILLO SBROCCA",
+            "SUBTEN ROSILANE PROENÇA SACHINHO DA COSTA",
+            "SUBTEN ANA CLARA TEIXEIRA BECHTLUFFT",
+            "SUBTEN SEVERINA PEREIRA ALVES",
+            "1° SGT KÁTIA TORRES BIONDI"
+          ]
+        },
+        {
+          "d": "09/11/2026",
+          "wd": "segunda-feira",
+          "t": [
+            "CAP RENATA DE OLIVEIRA MILAGRES TRISTÃO DA CUNHA",
+            "SUBTEN LUCIMAR DA ROCHA COTTA",
+            "SUBTEN CÉLIA MARTINS DA SILVA TEIXEIRA",
+            "SUBTEN PATRÍCIA ANDRADE GOLFETTO",
+            "1° SGT SÍLVIA GOMES DE LIMA"
+          ]
+        },
+        {
+          "d": "10/11/2026",
+          "wd": "terça-feira",
+          "t": [
+            "TEN CEL FRANK RONALD MOREIRA COSTA",
+            "SUBTEN ROSILANE PROENÇA SACHINHO DA COSTA",
+            "SUBTEN ANA CLARA TEIXEIRA BECHTLUFFT",
+            "SUBTEN SEVERINA PEREIRA ALVES",
+            "1° SGT KÁTIA TORRES BIONDI"
+          ]
+        },
+        {
+          "d": "11/11/2026",
+          "wd": "quarta-feira",
+          "t": [
+            "TEN CEL ANA MARIA PIA GRILLO SBROCCA",
+            "CAP RENATA DE OLIVEIRA MILAGRES TRISTÃO DA CUNHA",
+            "SUBTEN LUCIMAR DA ROCHA COTTA",
+            "SUBTEN CÉLIA MARTINS DA SILVA TEIXEIRA",
+            "SUBTEN PATRÍCIA ANDRADE GOLFETTO",
+            "1° SGT SÍLVIA GOMES DE LIMA"
+          ]
+        },
+        {
+          "d": "12/11/2026",
+          "wd": "quinta-feira",
+          "t": [
+            "TEN CEL FRANK RONALD MOREIRA COSTA",
+            "SUBTEN ROSILANE PROENÇA SACHINHO DA COSTA",
+            "SUBTEN ANA CLARA TEIXEIRA BECHTLUFFT",
+            "SUBTEN SEVERINA PEREIRA ALVES",
+            "1° SGT KÁTIA TORRES BIONDI"
+          ]
+        },
+        {
+          "d": "13/11/2026",
+          "wd": "sexta-feira",
+          "t": [
+            "TEN CEL ANA MARIA PIA GRILLO SBROCCA",
+            "SUBTEN LUCIMAR DA ROCHA COTTA",
+            "SUBTEN CÉLIA MARTINS DA SILVA TEIXEIRA",
+            "SUBTEN PATRÍCIA ANDRADE GOLFETTO",
+            "1° SGT SÍLVIA GOMES DE LIMA"
+          ]
+        },
+        {
+          "d": "16/11/2026",
+          "wd": "segunda-feira",
+          "t": [
+            "CAP RENATA DE OLIVEIRA MILAGRES TRISTÃO DA CUNHA",
+            "SUBTEN ROSILANE PROENÇA SACHINHO DA COSTA",
+            "SUBTEN ANA CLARA TEIXEIRA BECHTLUFFT",
+            "SUBTEN SEVERINA PEREIRA ALVES",
+            "1° SGT KÁTIA TORRES BIONDI"
+          ]
+        },
+        {
+          "d": "17/11/2026",
+          "wd": "terça-feira",
+          "t": [
+            "TEN CEL FRANK RONALD MOREIRA COSTA",
+            "SUBTEN LUCIMAR DA ROCHA COTTA",
+            "SUBTEN CÉLIA MARTINS DA SILVA TEIXEIRA",
+            "SUBTEN PATRÍCIA ANDRADE GOLFETTO",
+            "1° SGT SÍLVIA GOMES DE LIMA"
+          ]
+        },
+        {
+          "d": "18/11/2026",
+          "wd": "quarta-feira",
+          "t": [
+            "TEN CEL ANA MARIA PIA GRILLO SBROCCA",
+            "CAP RENATA DE OLIVEIRA MILAGRES TRISTÃO DA CUNHA",
+            "SUBTEN ROSILANE PROENÇA SACHINHO DA COSTA",
+            "SUBTEN ANA CLARA TEIXEIRA BECHTLUFFT",
+            "SUBTEN SEVERINA PEREIRA ALVES",
+            "1° SGT KÁTIA TORRES BIONDI"
+          ]
+        },
+        {
+          "d": "19/11/2026",
+          "wd": "quinta-feira",
+          "t": [
+            "TEN CEL FRANK RONALD MOREIRA COSTA",
+            "SUBTEN LUCIMAR DA ROCHA COTTA",
+            "SUBTEN CÉLIA MARTINS DA SILVA TEIXEIRA",
+            "SUBTEN PATRÍCIA ANDRADE GOLFETTO",
+            "1° SGT SÍLVIA GOMES DE LIMA"
+          ]
+        },
+        {
+          "d": "20/11/2026",
+          "wd": "sexta-feira",
+          "t": [],
+          "feriado": "FERIADO - DIA DA CONSCIÊNCIA NEGRA"
+        },
+        {
+          "d": "23/11/2026",
+          "wd": "segunda-feira",
+          "t": [
+            "CAP RENATA DE OLIVEIRA MILAGRES TRISTÃO DA CUNHA",
+            "SUBTEN LUCIMAR DA ROCHA COTTA",
+            "SUBTEN CÉLIA MARTINS DA SILVA TEIXEIRA",
+            "SUBTEN PATRÍCIA ANDRADE GOLFETTO",
+            "1° SGT SÍLVIA GOMES DE LIMA"
+          ]
+        },
+        {
+          "d": "24/11/2026",
+          "wd": "terça-feira",
+          "t": [
+            "TEN CEL FRANK RONALD MOREIRA COSTA",
+            "SUBTEN ROSILANE PROENÇA SACHINHO DA COSTA",
+            "SUBTEN ANA CLARA TEIXEIRA BECHTLUFFT",
+            "SUBTEN SEVERINA PEREIRA ALVES",
+            "1° SGT KÁTIA TORRES BIONDI"
+          ]
+        },
+        {
+          "d": "25/11/2026",
+          "wd": "quarta-feira",
+          "t": [
+            "TEN CEL ANA MARIA PIA GRILLO SBROCCA",
+            "CAP RENATA DE OLIVEIRA MILAGRES TRISTÃO DA CUNHA",
+            "SUBTEN LUCIMAR DA ROCHA COTTA",
+            "SUBTEN CÉLIA MARTINS DA SILVA TEIXEIRA",
+            "SUBTEN PATRÍCIA ANDRADE GOLFETTO",
+            "1° SGT SÍLVIA GOMES DE LIMA"
+          ]
+        },
+        {
+          "d": "26/11/2026",
+          "wd": "quinta-feira",
+          "t": [
+            "TEN CEL FRANK RONALD MOREIRA COSTA",
+            "SUBTEN ROSILANE PROENÇA SACHINHO DA COSTA",
+            "SUBTEN ANA CLARA TEIXEIRA BECHTLUFFT",
+            "SUBTEN SEVERINA PEREIRA ALVES",
+            "1° SGT KÁTIA TORRES BIONDI"
+          ]
+        },
+        {
+          "d": "27/11/2026",
+          "wd": "sexta-feira",
+          "t": [
+            "TEN CEL ANA MARIA PIA GRILLO SBROCCA",
+            "SUBTEN LUCIMAR DA ROCHA COTTA",
+            "SUBTEN CÉLIA MARTINS DA SILVA TEIXEIRA",
+            "SUBTEN PATRÍCIA ANDRADE GOLFETTO",
+            "1° SGT SÍLVIA GOMES DE LIMA"
+          ]
+        },
+        {
+          "d": "30/11/2026",
+          "wd": "segunda-feira",
+          "t": [
+            "CAP RENATA DE OLIVEIRA MILAGRES TRISTÃO DA CUNHA",
+            "SUBTEN ROSILANE PROENÇA SACHINHO DA COSTA",
+            "SUBTEN ANA CLARA TEIXEIRA BECHTLUFFT",
+            "SUBTEN SEVERINA PEREIRA ALVES",
+            "1° SGT KÁTIA TORRES BIONDI"
+          ]
+        }
+      ]
+    }
+  ]
+}
