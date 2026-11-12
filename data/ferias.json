@@ -1,5 +1,12 @@
 {
   "atualizadoEm": null,
   "linkQuadro": null,
-  "periodos": []
+  "observacao": "Extraído manualmente de uma captura de tela da lista \"NOVEMBRO 2026\" do quadro Trello \"PLANO DE FÉRIAS 2.0\" (link do quadro ainda pendente). A lista mostrava 6 cartões mas apenas 5 estavam visíveis na captura.",
+  "periodos": [
+    {"nome": "TEN CEL ALESSANDRA FRANCO RIBEIRO", "inicio": "01/11/2026", "fim": "15/11/2026"},
+    {"nome": "MAJ RENATA MADDALENA MONTEIRO CONTREIRAS", "inicio": "21/11/2026", "fim": "30/11/2026"},
+    {"nome": "MAJ LUCIANA ALEXANDRINA JUCÁ", "inicio": "01/11/2026", "fim": "30/11/2026"},
+    {"nome": "CAP ALESSANDRA PEQUENO", "inicio": "01/11/2026", "fim": "30/11/2026"},
+    {"nome": "1° SGT VANESSA PAES LEME DE LUCA", "inicio": "01/04/2026", "fim": "20/04/2026"}
+  ]
 }

@@ -1,9 +1,101 @@
 {
-  "geradoEm": "2026-11-12T01:47:43Z",
+  "geradoEm": "2026-11-12T02:13:32Z",
   "resumo": {
-    "alta": 0,
+    "alta": 13,
     "media": 0,
     "baixa": 0
   },
-  "achados": []
+  "achados": [
+    {
+      "severidade": "alta",
+      "tipo": "conflito_ferias",
+      "escalaId": "assistencial",
+      "data": "03/11/2026",
+      "descricao": "TEN CEL ALESSANDRA FRANCO RIBEIRO estava de férias (Trello) e foi removido(a) da escala Assistencial em 03/11/2026, onde ainda aparecia lançado(a) no Google Docs."
+    },
+    {
+      "severidade": "alta",
+      "tipo": "conflito_ferias",
+      "escalaId": "assistencial",
+      "data": "03/11/2026",
+      "descricao": "MAJ LUCIANA ALEXANDRINA JUCÁ estava de férias (Trello) e foi removido(a) da escala Assistencial em 03/11/2026, onde ainda aparecia lançado(a) no Google Docs."
+    },
+    {
+      "severidade": "alta",
+      "tipo": "conflito_ferias",
+      "escalaId": "assistencial",
+      "data": "04/11/2026",
+      "descricao": "MAJ LUCIANA ALEXANDRINA JUCÁ estava de férias (Trello) e foi removido(a) da escala Assistencial em 04/11/2026, onde ainda aparecia lançado(a) no Google Docs."
+    },
+    {
+      "severidade": "alta",
+      "tipo": "conflito_ferias",
+      "escalaId": "assistencial",
+      "data": "10/11/2026",
+      "descricao": "TEN CEL ALESSANDRA FRANCO RIBEIRO estava de férias (Trello) e foi removido(a) da escala Assistencial em 10/11/2026, onde ainda aparecia lançado(a) no Google Docs."
+    },
+    {
+      "severidade": "alta",
+      "tipo": "conflito_ferias",
+      "escalaId": "assistencial",
+      "data": "10/11/2026",
+      "descricao": "MAJ LUCIANA ALEXANDRINA JUCÁ estava de férias (Trello) e foi removido(a) da escala Assistencial em 10/11/2026, onde ainda aparecia lançado(a) no Google Docs."
+    },
+    {
+      "severidade": "alta",
+      "tipo": "conflito_ferias",
+      "escalaId": "assistencial",
+      "data": "11/11/2026",
+      "descricao": "MAJ LUCIANA ALEXANDRINA JUCÁ estava de férias (Trello) e foi removido(a) da escala Assistencial em 11/11/2026, onde ainda aparecia lançado(a) no Google Docs."
+    },
+    {
+      "severidade": "alta",
+      "tipo": "conflito_ferias",
+      "escalaId": "assistencial",
+      "data": "17/11/2026",
+      "descricao": "MAJ LUCIANA ALEXANDRINA JUCÁ estava de férias (Trello) e foi removido(a) da escala Assistencial em 17/11/2026, onde ainda aparecia lançado(a) no Google Docs."
+    },
+    {
+      "severidade": "alta",
+      "tipo": "conflito_ferias",
+      "escalaId": "assistencial",
+      "data": "18/11/2026",
+      "descricao": "MAJ LUCIANA ALEXANDRINA JUCÁ estava de férias (Trello) e foi removido(a) da escala Assistencial em 18/11/2026, onde ainda aparecia lançado(a) no Google Docs."
+    },
+    {
+      "severidade": "alta",
+      "tipo": "conflito_ferias",
+      "escalaId": "assistencial",
+      "data": "23/11/2026",
+      "descricao": "MAJ LUCIANA ALEXANDRINA JUCÁ estava de férias (Trello) e foi removido(a) da escala Assistencial em 23/11/2026, onde ainda aparecia lançado(a) no Google Docs."
+    },
+    {
+      "severidade": "alta",
+      "tipo": "conflito_ferias",
+      "escalaId": "assistencial",
+      "data": "24/11/2026",
+      "descricao": "MAJ RENATA MADDALENA MONTEIRO CONTREIRAS estava de férias (Trello) e foi removido(a) da escala Assistencial em 24/11/2026, onde ainda aparecia lançado(a) no Google Docs."
+    },
+    {
+      "severidade": "alta",
+      "tipo": "conflito_ferias",
+      "escalaId": "assistencial",
+      "data": "24/11/2026",
+      "descricao": "MAJ LUCIANA ALEXANDRINA JUCÁ estava de férias (Trello) e foi removido(a) da escala Assistencial em 24/11/2026, onde ainda aparecia lançado(a) no Google Docs."
+    },
+    {
+      "severidade": "alta",
+      "tipo": "conflito_ferias",
+      "escalaId": "assistencial",
+      "data": "25/11/2026",
+      "descricao": "MAJ RENATA MADDALENA MONTEIRO CONTREIRAS estava de férias (Trello) e foi removido(a) da escala Assistencial em 25/11/2026, onde ainda aparecia lançado(a) no Google Docs."
+    },
+    {
+      "severidade": "alta",
+      "tipo": "conflito_ferias",
+      "escalaId": "assistencial",
+      "data": "30/11/2026",
+      "descricao": "MAJ LUCIANA ALEXANDRINA JUCÁ estava de férias (Trello) e foi removido(a) da escala Assistencial em 30/11/2026, onde ainda aparecia lançado(a) no Google Docs."
+    }
+  ]
 }
