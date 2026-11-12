@@ -25,6 +25,9 @@ import urllib.request
 from collections import Counter
 from datetime import date, datetime, timezone
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import auditoria  # noqa: E402
+
 WEEKDAYS_PT = [
     "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira",
     "sexta-feira", "sábado", "domingo",
@@ -279,6 +282,76 @@ def merge_contatos(sections, path):
         f.write("\n")
 
 
+def parse_br_date(s):
+    d, m, y = s.split('/')
+    return date(int(y), int(m), int(d))
+
+
+def load_ferias(path):
+    if not os.path.exists(path):
+        return []
+    with open(path, encoding="utf-8") as f:
+        data = json.load(f)
+    periodos = []
+    for p in data.get("periodos", []):
+        try:
+            periodos.append({
+                "key": norm_key(split_rank(p["nome"])[1]),
+                "nome": p["nome"],
+                "inicio": parse_br_date(p["inicio"]),
+                "fim": parse_br_date(p["fim"]),
+            })
+        except (KeyError, ValueError):
+            continue
+    return periodos
+
+
+def apply_ferias_exclusion(sections, periodos):
+    """Remove dos dias quem estiver de ferias naquela data. Retorna a lista
+    de conflitos encontrados (para entrar na auditoria)."""
+    if not periodos:
+        return []
+    conflitos = []
+
+    def em_ferias(nome_raw, d):
+        key = norm_key(split_rank(nome_raw)[1])
+        for p in periodos:
+            if p["key"] == key and p["inicio"] <= d <= p["fim"]:
+                return True
+        return False
+
+    for cfg, days in sections:
+        for day in days:
+            dd_, mm_, yy_ = (int(x) for x in day["d"].split('/'))
+            d = date(yy_, mm_, dd_)
+            if cfg["layout"] == "shift":
+                mantidos = []
+                for n, s in day["r"]:
+                    if em_ferias(n, d):
+                        conflitos.append({"nome": n, "escalaId": cfg["id"], "escalaLabel": cfg["label"], "data": day["d"]})
+                    else:
+                        mantidos.append([n, s])
+                day["r"] = mantidos
+            elif cfg["layout"] == "team":
+                mantidos = []
+                for n in day["t"]:
+                    if em_ferias(n, d):
+                        conflitos.append({"nome": n, "escalaId": cfg["id"], "escalaLabel": cfg["label"], "data": day["d"]})
+                    else:
+                        mantidos.append(n)
+                day["t"] = mantidos
+            else:
+                for col in ("a", "b"):
+                    mantidos = []
+                    for e in day[col]:
+                        if em_ferias(e["n"], d):
+                            conflitos.append({"nome": e["n"], "escalaId": cfg["id"], "escalaLabel": cfg["label"], "data": day["d"]})
+                        else:
+                            mantidos.append(e)
+                    day[col] = mantidos
+    return conflitos
+
+
 def main():
     if len(sys.argv) < 2:
         print("Uso: python3 scripts/sync_escala.py <DOC_ID> [caminho_txt_local]", file=sys.stderr)
@@ -309,15 +382,27 @@ def main():
     data_dir = os.path.join(repo_root, "data")
     os.makedirs(data_dir, exist_ok=True)
 
+    merge_contatos(sections, os.path.join(data_dir, "contatos.json"))
+
+    periodos = load_ferias(os.path.join(data_dir, "ferias.json"))
+    conflitos_ferias = apply_ferias_exclusion(sections, periodos)
+
     escalas = build_escalas_json(sections, doc_id)
     with open(os.path.join(data_dir, "escalas.json"), "w", encoding="utf-8") as f:
         json.dump(escalas, f, ensure_ascii=False, indent=2)
         f.write("\n")
 
-    merge_contatos(sections, os.path.join(data_dir, "contatos.json"))
+    resultado_auditoria = auditoria.run_audit(escalas["escalas"], conflitos_ferias)
+    with open(os.path.join(data_dir, "auditoria.json"), "w", encoding="utf-8") as f:
+        json.dump(resultado_auditoria, f, ensure_ascii=False, indent=2)
+        f.write("\n")
 
     total_dias = sum(len(d) for _, d in sections)
+    r = resultado_auditoria["resumo"]
     print(f"OK: {escalas['competencia']} — {len(sections)} escalas, {total_dias} dias no total.")
+    print(f"Auditoria: {len(resultado_auditoria['achados'])} achados (alta={r['alta']}, média={r['media']}, baixa={r['baixa']}).")
+    if conflitos_ferias:
+        print(f"Férias: {len(conflitos_ferias)} lançamento(s) removido(s) por conflito com férias.")
 
 
 if __name__ == "__main__":

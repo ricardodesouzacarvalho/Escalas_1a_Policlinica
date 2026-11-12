@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Correções do dia — 1ª Policlínica CBMERJ</title>
+<link rel="icon" type="image/webp" href="assets/logo-policlinica.webp">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="subhero">
+  <div class="subhero-inner">
+    <h1>Correções do dia a dia</h1>
+    <p>Faltas, substituições e permutas lançadas pela administração depois que a escala do mês já foi publicada.
+       Isto não substitui a escala oficial do Google Docs — é o registro do que mudou no dia a dia.</p>
+  </div>
+</header>
+
+<nav class="pagenav" aria-label="Navegação entre páginas">
+  <div class="pagenav-inner">
+    <a href="index.html">🏠 Escalas</a>
+    <a href="correcoes.html" class="active">📋 Correções do dia</a>
+    <a href="auditoria.html">🔍 Auditoria<span class="badge-alert" id="audit-badge" style="display:none"></span></a>
+  </div>
+</nav>
+
+<div class="panel">
+  <div id="cta"></div>
+  <div id="content">Carregando…</div>
+</div>
+
+<footer>
+  <strong>1ª Policlínica — CBMERJ</strong> · Documento de divulgação pública ·
+  Confira sempre a versão oficial publicada.
+</footer>
+
+<script>
+const norm=s=>(s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
+const dd=d=>(d||"").slice(0,5);
+
+function tipoClass(tipo){
+  const t=norm(tipo);
+  if(t.includes("falta"))return "falta";
+  if(t.includes("substitui"))return "substituicao";
+  if(t.includes("permuta"))return "permuta";
+  return "outro";
+}
+
+function renderTable(correcoes){
+  if(!correcoes.length){
+    return `<div class="empty">Nenhuma correção registrada até agora.</div>`;
+  }
+  const rows=correcoes.map(c=>`
+    <tr>
+      <td>${dd(c.data)}</td>
+      <td>${c.escala||"—"}</td>
+      <td><span class="tipo ${tipoClass(c.tipo)}">${c.tipo||"—"}</span></td>
+      <td>${c.profissionalOriginal||"—"}</td>
+      <td>${c.profissionalNovo||"—"}</td>
+      <td>${c.observacao||""}</td>
+    </tr>`).join("");
+  return `<table class="corr-table">
+    <thead><tr><th>Data</th><th>Escala</th><th>Tipo</th><th>Profissional original</th><th>Substituto / novo</th><th>Observação</th></tr></thead>
+    <tbody>${rows}</tbody>
+  </table>`;
+}
+
+async function init(){
+  try{
+    const res=await fetch("data/correcoes.json",{cache:"no-store"});
+    if(!res.ok)throw new Error("HTTP "+res.status);
+    const data=await res.json();
+
+    const cta=document.getElementById("cta");
+    if(data.linkPlanilha){
+      cta.innerHTML=`<a class="cta-edit" href="${data.linkPlanilha}" target="_blank" rel="noopener">📋 Lançar nova correção na planilha ↗</a>`;
+    }
+
+    document.getElementById("content").innerHTML=renderTable(data.correcoes||[]);
+
+    const auditRes=await fetch("data/auditoria.json",{cache:"no-store"}).catch(()=>null);
+    if(auditRes&&auditRes.ok){
+      const aud=await auditRes.json();
+      const badge=document.getElementById("audit-badge");
+      if(badge&&aud.resumo&&aud.resumo.alta>0){badge.textContent=aud.resumo.alta;badge.style.display="";}
+    }
+  }catch(err){
+    document.getElementById("content").innerHTML=`<div class="empty">Não foi possível carregar as correções agora.</div>`;
+    console.error(err);
+  }
+}
+init();
+</script>
+</body>
+</html>
