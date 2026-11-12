@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auditoria — 1ª Policlínica CBMERJ</title>
+<link rel="icon" type="image/webp" href="assets/logo-policlinica.webp">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="subhero">
+  <div class="subhero-inner">
+    <h1>Auditoria das escalas</h1>
+    <p>Verificações automáticas rodadas a cada sincronização: conflitos com férias, dias sem cobertura em
+       escalas de plantão 24h e nomes parecidos que podem ser a mesma pessoa grafada de forma diferente.
+       Nada aqui é alterado manualmente — corrija na fonte (Google Docs ou Trello) e sincronize de novo.</p>
+  </div>
+</header>
+
+<nav class="pagenav" aria-label="Navegação entre páginas">
+  <div class="pagenav-inner">
+    <a href="index.html">🏠 Escalas</a>
+    <a href="correcoes.html">📋 Correções do dia</a>
+    <a href="auditoria.html" class="active">🔍 Auditoria<span class="badge-alert" id="audit-badge" style="display:none"></span></a>
+  </div>
+</nav>
+
+<div class="panel">
+  <div id="updated" style="margin-bottom:14px;font-size:.82rem;color:var(--silver-700)"></div>
+  <div class="summary-row" id="summary"></div>
+  <div id="content">Carregando…</div>
+</div>
+
+<footer>
+  <strong>1ª Policlínica — CBMERJ</strong> · Documento de divulgação pública ·
+  Confira sempre a versão oficial publicada.
+</footer>
+
+<script>
+const LABELS={alta:"Alta",media:"Média",baixa:"Baixa"};
+const TIPOS={
+  conflito_ferias:"Conflito com férias",
+  dia_sem_profissional:"Dia sem profissional",
+  lacuna_cobertura:"Lacuna de cobertura 24h",
+  nome_parecido:"Possível nome duplicado",
+};
+
+function renderSummary(resumo){
+  return ["alta","media","baixa"].map(s=>
+    `<div class="sev-card ${s}"><div class="n">${resumo[s]||0}</div><div class="l">${LABELS[s]}</div></div>`
+  ).join("");
+}
+
+function renderFindings(achados){
+  if(!achados.length){
+    return `<div class="empty">✅ Nenhuma inconsistência encontrada na última sincronização.</div>`;
+  }
+  return achados.map(a=>`
+    <div class="finding ${a.severidade}">
+      <div class="meta">
+        <span class="sev ${a.severidade}">${LABELS[a.severidade]}</span>
+        <span>${TIPOS[a.tipo]||a.tipo}</span>
+        ${a.escalaId?`<span>· ${a.escalaId}</span>`:""}
+        ${a.data?`<span>· ${a.data}</span>`:""}
+      </div>
+      <div class="desc">${a.descricao}</div>
+    </div>`).join("");
+}
+
+async function init(){
+  try{
+    const res=await fetch("data/auditoria.json",{cache:"no-store"});
+    if(!res.ok)throw new Error("HTTP "+res.status);
+    const data=await res.json();
+
+    if(data.geradoEm){
+      const dt=new Date(data.geradoEm);
+      document.getElementById("updated").textContent=
+        `Última auditoria rodada em ${dt.toLocaleString("pt-BR",{dateStyle:"short",timeStyle:"short"})}.`;
+    }
+    document.getElementById("summary").innerHTML=renderSummary(data.resumo||{});
+    document.getElementById("content").innerHTML=renderFindings(data.achados||[]);
+
+    const badge=document.getElementById("audit-badge");
+    if(badge&&data.resumo&&data.resumo.alta>0){badge.textContent=data.resumo.alta;badge.style.display="";}
+  }catch(err){
+    document.getElementById("content").innerHTML=`<div class="empty">Não foi possível carregar a auditoria agora.</div>`;
+    console.error(err);
+  }
+}
+init();
+</script>
+</body>
+</html>
