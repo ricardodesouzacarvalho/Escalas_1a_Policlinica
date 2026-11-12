@@ -147,14 +147,18 @@ const state={sched:"geral",view:"day",q:""};
 function distinctCalendarDays(){
   const set=new Set();SCHEDULES.forEach(s=>s.days.forEach(d=>set.add(d.d)));return set.size;
 }
+const BASE_IDS=["assistencial","permanencia","administrativo","enfermagem"];
+const BASE_LABELS={assistencial:"Assistência",permanencia:"Permanência",administrativo:"Administrativo",enfermagem:"Enfermagem"};
+
 function buildChrome(){
   const chips=[["geral","GERAL",distinctCalendarDays()],
+    ["global","GLOBAL",globalDates().length],
     ...SCHEDULES.map(s=>[s.id,s.label.toUpperCase(),s.days.length]),
     ["ferias","FÉRIAS",FERIAS.periodos.length]];
   document.getElementById("chipbar").innerHTML=chips.map(([id,lbl,c])=>
     `<button class="tchip" data-sched="${id}"><span>${lbl}</span><span class="cnt">${c}</span></button>`).join("");
   document.getElementById("sel-tipo").innerHTML=chips.map(([id,lbl,c])=>
-    `<option value="${id}">${id==="geral"?"Geral — todas":id==="ferias"?"Férias":(byId[id].short||byId[id].label)} (${c})</option>`).join("");
+    `<option value="${id}">${id==="geral"?"Geral — todas":id==="ferias"?"Férias":id==="global"?"Global — todas as funções":(byId[id].short||byId[id].label)} (${c})</option>`).join("");
   document.querySelectorAll(".tchip").forEach(b=>b.onclick=()=>setSched(b.dataset.sched));
   document.getElementById("sel-tipo").onchange=e=>setSched(e.target.value);
 }
@@ -162,7 +166,7 @@ function buildChrome(){
 function syncChrome(){
   document.querySelectorAll(".tchip").forEach(b=>b.classList.toggle("active",b.dataset.sched===state.sched));
   document.getElementById("sel-tipo").value=state.sched;
-  document.getElementById("seg-view").classList.toggle("hidden",state.sched==="geral"||state.sched==="ferias");
+  document.getElementById("seg-view").classList.toggle("hidden",state.sched==="geral"||state.sched==="ferias"||state.sched==="global");
 }
 
 /* ---------- STATS + LEGEND ---------- */
@@ -181,6 +185,14 @@ function renderStatsLegend(){
     const ativos=FERIAS.periodos.filter(p=>periodoAtivo(p,hoje)).length;
     stats.innerHTML=statCards([[FERIAS.periodos.length,"Períodos"],[ativos,"De férias hoje"],[competencia,"Competência"]]);
     legend.innerHTML=`<span class="item"><span class="dot a"></span> Em férias agora</span><span class="item"><span class="dot b"></span> Período futuro/encerrado</span>`;
+    return;
+  }
+  if(state.sched==="global"){
+    const days=globalDates();
+    let entries=0;const profs=new Set();
+    BASE_IDS.forEach(id=>{const sc=byId[id];if(!sc)return;sc.days.forEach(d=>dayNames(sc,d).forEach(n=>{profs.add(norm(rank(n).rest));entries++;}));});
+    stats.innerHTML=statCards([[days.length,"Dias"],[profs.size,"Profissionais"],[entries,"Designações"],[competencia,"Competência"]]);
+    legend.innerHTML=`<span class="item"><span class="acc-flag">SPA · Oficial de Dia</span> atividade acumulada à função do dia</span><span class="item hint" style="color:var(--silver-500)">Botão “Imprimir tela” ou Ctrl/Cmd + P</span>`;
     return;
   }
   const sc=byId[state.sched];
@@ -204,6 +216,7 @@ function render(){
   const q=norm(state.q.trim());
   if(state.sched==="geral"){el.innerHTML=renderDash(q);bindDash();return;}
   if(state.sched==="ferias"){el.innerHTML=renderFerias(q);return;}
+  if(state.sched==="global"){el.innerHTML=renderGlobal(q);return;}
   const sc=byId[state.sched];
   el.innerHTML=state.view==="day"?renderDays(sc,q):renderProf(sc,q);
 }
@@ -235,6 +248,89 @@ function renderFerias(q){
     </div>`;
   }).join("");
   return `<div class="grid">${cards||emptyBlock()}</div>`;
+}
+
+/* ---------- GLOBAL (todos os militares do dia, por função) ---------- */
+function globalDates(){
+  const map=new Map();
+  BASE_IDS.forEach(id=>{const sc=byId[id];if(!sc)return;sc.days.forEach(d=>{if(!map.has(d.d))map.set(d.d,d.wd);});});
+  return [...map.entries()].sort((a,b)=>brDateToJs(a[0])-brDateToJs(b[0]));
+}
+function dayOf(scId,dateStr){
+  const sc=byId[scId];if(!sc)return null;
+  return sc.days.find(d=>d.d===dateStr)||null;
+}
+function buildAccFlags(dateStr){
+  const flags=new Map();
+  const add=(name,label)=>{const k=norm(rank(name).rest);if(!flags.has(k))flags.set(k,[]);flags.get(k).push(label);};
+  const spa=dayOf("spa",dateStr);
+  if(spa)spa.r.forEach(([n,s])=>add(n,"SPA "+((s&M&&s&T)?"M/T":s&M?"M":"T")));
+  const of=dayOf("oficial",dateStr);
+  if(of){
+    of.a.forEach(e=>add(e.n,"Oficial de Dia"+(e.t?` (${e.t})`:"")));
+    of.b.forEach(e=>add(e.n,"Sobreaviso (Of. Dia)"));
+  }
+  return flags;
+}
+function flagsHTML(flagsMap,name){
+  const arr=flagsMap.get(norm(rank(name).rest));
+  if(!arr||!arr.length)return "";
+  return arr.map(f=>`<span class="acc-flag">${f}</span>`).join("");
+}
+function pairSecGlobal(label,cls,arr,flagsMap,matched){
+  return `<div class="pair-sec"><div class="pair-lbl ${cls}"><span class="dot ${cls}"></span>${label}</div>`+
+    arr.map(e=>{matched.add(norm(rank(e.n).rest));return `<div class="pair-row">${e.t?`<span class="time-tag">${e.t}</span>`:""}${rankHTML(e.n)}${flagsHTML(flagsMap,e.n)}</div>`;}).join("")+`</div>`;
+}
+function renderGlobal(q){
+  const days=globalDates();
+  const cards=days.map(([dateStr,wd])=>{
+    const blobParts=[dateStr,wd];
+    BASE_IDS.forEach(id=>{const d=dayOf(id,dateStr);if(d)blobParts.push(dayNames(byId[id],d).join(" "));});
+    const spaDay0=dayOf("spa",dateStr);if(spaDay0)blobParts.push(spaDay0.r.map(x=>x[0]).join(" "));
+    const ofDay0=dayOf("oficial",dateStr);if(ofDay0)blobParts.push([...ofDay0.a.map(e=>e.n),...ofDay0.b.map(e=>e.n)].join(" "));
+    const blob=norm(blobParts.join(" "));
+    if(q&&!blob.includes(q))return "";
+
+    const flags=buildAccFlags(dateStr);
+    const matched=new Set();
+    let total=0;
+
+    const sections=BASE_IDS.map(id=>{
+      const sc=byId[id],day=dayOf(id,dateStr);
+      if(!sc)return "";
+      if(!day)return `<div class="gsec"><div class="gsec-lbl">${BASE_LABELS[id]}</div><div class="gsec-empty">Sem lançamento</div></div>`;
+      const names=dayNames(sc,day);total+=names.length;
+      let body;
+      if(sc.layout==="shift"){
+        body=`<ul class="roster">`+day.r.map(([n,s])=>{matched.add(norm(rank(n).rest));
+          return `<li>${rankHTML(n)}${flagsHTML(flags,n)}<span class="shifts"><span class="sh ${s&M?'on-m':'off'}">M</span><span class="sh ${s&T?'on-t':'off'}">T</span></span></li>`;
+        }).join("")+`</ul>`;
+      }else if(sc.layout==="team"){
+        body=`<ul class="roster">`+day.t.map(n=>{matched.add(norm(rank(n).rest));
+          return `<li>${rankHTML(n)}${flagsHTML(flags,n)}</li>`;
+        }).join("")+`</ul>`;
+      }else{
+        body=pairSecGlobal(sc.cols[0],"a",day.a,flags,matched)+pairSecGlobal(sc.cols[1],"b",day.b,flags,matched);
+      }
+      return `<div class="gsec"><div class="gsec-lbl">${BASE_LABELS[id]}<span class="gsec-cnt">${names.length}</span></div>${body}</div>`;
+    }).join("");
+
+    const extras=[];
+    const spaDay=dayOf("spa",dateStr);
+    if(spaDay)spaDay.r.forEach(([n])=>{if(!matched.has(norm(rank(n).rest)))extras.push({n,label:"SPA"});});
+    const ofDay=dayOf("oficial",dateStr);
+    if(ofDay){
+      ofDay.a.forEach(e=>{if(!matched.has(norm(rank(e.n).rest)))extras.push({n:e.n,label:"Oficial de Dia"+(e.t?` (${e.t})`:"")});});
+      ofDay.b.forEach(e=>{if(!matched.has(norm(rank(e.n).rest)))extras.push({n:e.n,label:"Sobreaviso (Of. Dia)"});});
+    }
+    const extrasHTML=extras.length?`<div class="gsec gsec-extra"><div class="gsec-lbl">Também de plantão hoje (sem função-base cadastrada)</div>
+      <ul class="roster">${extras.map(e=>`<li>${rankHTML(e.n)}<span class="acc-flag">${e.label}</span></li>`).join("")}</ul></div>`:"";
+
+    return `<article class="card gcard">
+      <div class="card-head"><div><div class="date">${dd(dateStr)}</div><div class="wd">${wd}</div></div><span class="count">${total}</span></div>
+      ${sections}${extrasHTML}</article>`;
+  }).join("");
+  return `<div class="grid global-grid">${cards||emptyBlock()}</div>`;
 }
 
 /* GERAL dashboard */

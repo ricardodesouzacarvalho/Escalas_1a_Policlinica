@@ -251,3 +251,16 @@
   border:1px solid var(--line);border-radius:999px;padding:3px 11px;cursor:pointer;transition:.15s}
 #btn-refresh:hover{background:var(--silver-100)}
 #btn-refresh:disabled{opacity:.6;cursor:wait}
+
+/* ---------- GLOBAL (todas as funções do dia) ---------- */
+.global-grid{grid-template-columns:repeat(auto-fill,minmax(360px,1fr))}
+.gcard{padding-bottom:2px}
+.gsec{border-bottom:1px solid var(--line)}
+.gsec:last-child{border-bottom:none}
+.gsec-lbl{display:flex;align-items:center;gap:8px;padding:8px 14px 4px;font-size:.66rem;font-weight:800;
+  text-transform:uppercase;letter-spacing:.06em;color:var(--red-700);background:var(--cream)}
+.gsec-cnt{background:var(--silver-100);color:var(--silver-700);border-radius:999px;padding:0 7px;font-size:.64rem;font-weight:800}
+.gsec-empty{padding:3px 14px 10px;font-size:.78rem;color:var(--silver-500);font-style:italic}
+.gsec-extra .gsec-lbl{color:var(--gold-600)}
+.acc-flag{display:inline-flex;align-items:center;font-size:.6rem;font-weight:800;color:var(--gold-600);
+  background:#FBF0D9;border:1px solid #EFD9A8;border-radius:5px;padding:1px 6px;margin-left:2px;white-space:nowrap}
